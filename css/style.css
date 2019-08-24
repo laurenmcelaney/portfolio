@@ -11,7 +11,7 @@ body {
 }
 .container-class {
   margin: 0 auto;
-  width: 1154px;
+  width: 812px;
   height: 349px;
 
 }
@@ -33,6 +33,13 @@ body {
   display:inline-block;
 }
 
+.bottom-footer {
+  width: 812px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display:inline-block;
+  justify-content: center;
+}
 .menu {
   color: #340C18;
   font-family: Montserrat, sans-serif;
@@ -89,25 +96,129 @@ body {
   padding-left: 30px;
   margin: 0px;
 }
-
 .flexbox {
   padding: 10;
   margin: 10;
-  list-style: none;
-
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+  width: 700px;
   display: flex;
-
-  -webkit-flex-flow: row wrap;
   justify-content: space-around;
 }
+
+.wireframe-link {
+  padding: 8px 16px;
+  background: #767286;
+  line-height: 2;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  display:inline-block;
+  justify-content: center;
+}
+
+.wireframe-link1:hover {
+  background-color: #5B2423;
+}
+.prototype-link {
+  padding: 8px 16px;
+  background: #767286;
+  line-height: 2;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  display:inline-block;
+  width:200px;
+
+}
+
+.prototype-link1:hover {
+  background-color: #5B2423;
+}
+
+.float-box-left {
+    padding:10px;
+    margin: auto;
+    box-shadow: 0 0 30px rgba(0,0,0,.25);
+    background-color: white;
+
+}
+
+.float-box-solution {
+    padding:10px;
+    margin: auto;
+    box-shadow: 0 0 30px rgba(0,0,0,.25);
+    background-color: white;
+
+
+}
+
+.float-box-problem {
+    padding:10px;
+    margin: auto;
+    box-shadow: 0 0 30px rgba(0,0,0,.25);
+    background-color: white;
+
+
+}
+.wireframing {
+  color: #696B6F;
+  font-family: Montserrat, sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 26px;
+  width: 812px;
+  padding: 20px;
+  margin: 0px;
+  display: inline-block;
+  }
+
+  .smallerbox {
+    color: #696B6F;
+    font-family: Montserrat, sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 26px;
+    background-color: #F2F2F2;
+    width: 730px;
+    padding: 20px;
+
+    }
+
+  .box-solution {
+    color: #696B6F;
+    font-family: Montserrat, sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 26px;
+    width: 402px;
+    padding: 20px;
+    display: inline-block;
+    float: right;
+    }
+
+    .box-problem {
+      color: #696B6F;
+      font-family: Montserrat, sans-serif;
+      font-weight: lighter;
+      font-size: 14px;
+      line-height: 26px;
+      width: 402px;
+      padding: 20px;
+      display: inline-block;
+      float: left;
+      }
+
+.shadow, .img-shadow {
+    width: 812px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    top: 0;
+}
+
 .personas {
   padding: 5px;
   width: 200px;
-  height: 150px;
+  height: auto;
   margin-top: 10px;
 }
 
@@ -133,18 +244,13 @@ body {
   padding-left: 80px;
   margin: 4px;
 }
-.user-map{
-  color: #092448;
+
+.results-survey{
+  color: #696B6F;
   font-family: Montserrat, sans-serif;
   font-weight: lighter;
   font-size: 14px;
   line-height: 26px;
-  width: 812px;
-  padding-left: 80px;
-  margin: 4px;
-}
-
-.results-survey{
   width: 812px;
   padding-left: 80px;
   margin: 4px;
@@ -154,10 +260,10 @@ body {
   font-family: Montserrat, sans-serif;
   font-weight: lighter;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 26px;
   width: 812px;
   padding-left: 80px;
-  margin: 0px;
+  margin: 4px;
 }
 
 .images{
@@ -171,12 +277,17 @@ body {
 }
 
 .userstories {
-    align-items: center;
-    display: flex;
-    flex-direction:  row;
-    flex-wrap:  wrap;
-    margin: 0;
+  color: #696B6F;
+  font-family: Montserrat, sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 26px;
+  width: 812px;
+  padding-left: 80px;
+  margin: 4px;
+  display: inline-block;
   }
+
 
 .flex-about {
   align-items: flex-start;
@@ -187,7 +298,7 @@ body {
 }
 
 .flex-wrap {
-    align-items: center;
+    align-items: baseline;
     display: flex;
     flex-direction:  row;
     flex-wrap:  wrap;
@@ -198,18 +309,20 @@ h1 {
   font-family: Baskerville, serif;
   font-weight: bold;
   font-size: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   line height: 140%;
+  text-align: center;
 
 }
 
 
 h2 {
-  color: 	#808080;
-  font-size: 14px;
+  color: 	#000000;
+  font-family: 'Baskerville', serif;
+  font-size: 22px;
   line-height: 120%;
   font-weight:500;
-  text-align: right;
+  text-align: center;
   margin-right: 8px;
 
 
@@ -243,50 +356,55 @@ h5 {
 
 h6 {
   color: #45445B;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-  margin: auto;
+  font-family: 'Baskerville', serif;
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  margin: 0;
 
 }
 
 
+.container {
+  background-color: #DCDCDC;
+  margin-top: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
 
+}
 
-#photos {
-  /* Prevent vertical gaps */
-  line-height: 1;
-
-  -webkit-column-count: 5;
-   -webkit-column-gap:   5px;
-   -moz-column-count:    5;
-   -moz-column-gap:      5px;
-   column-count:         5;
-   column-gap:           5px;
- }
-
-
-#photos img {
-  /* Just in case there are inline attributes */
-  width: 100% !important;
+.photos-container {
+  position: relative;
+  width: 50%;
+}
+.image-home {
+  opacity: 1;
+  display:  inline-block;
+  width: 100%;
   height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
 
-@media (max-width: 1600px) {
-  #photos {
-  -moz-column-count:    2;
-  -webkit-column-count: 2;
-  column-count:         2;
-  }
-}
-@media (max-width: 800px) {
-  #photos {
-  -moz-column-count:    1;
-  -webkit-column-count: 1;
-  column-count:         1;
-  }
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
+.photos-container:hover .image-home {
+  opacity: 0.3;
+}
+
+.photos-container:hover .middle {
+  opacity: 1;
+}
 
 
 .location {
@@ -309,14 +427,4 @@ h6 {
 }
 .location > * {
   flex: 1 100%;
-}
-.data1 {
-  flex: 0 1 110px;
-}
-.data2 {
-flex: 1;
-}
-
-.data3 {
-  flex: 0 1 120px;
 }
