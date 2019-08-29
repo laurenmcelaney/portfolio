@@ -364,7 +364,7 @@ ul.box li {
 /*** about page ***/
 
 .about-image{
-  background-image: url("images/aboutimage.png");
+  background-image: url("/images/aboutimage.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size:contain;
