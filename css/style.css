@@ -182,22 +182,15 @@ hr {
 .photos-container {
   position: relative;
   float: left;
-  width: 50%;
+  width: 100%;
 }
 .image-home {
   opacity: 1;
-  width: 100%;
   height: auto;
+  width: auto;
+  max-width: 100%;
   transition: .5s ease;
   backface-visibility: hidden;
-}
-
-@media(max-width: 1024px) {
-  .photos-container, .image-home {
-    float: left;
-    width: 50%;
-    top: 50px;
-  }
 }
 
 @media(max-width: 700px) {
@@ -225,7 +218,6 @@ hr {
 .photos-container:hover .middle {
   opacity: 1;
 }
-
 /*** typography ***/
 h1 {
   color: #45445B;
