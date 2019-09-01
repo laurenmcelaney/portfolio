@@ -13,7 +13,7 @@ body {
   display: inline-block;
   width: 100%
 }
-@media(max-width: 700px) {
+@media(max-width: 768px) and (max-width: 1024px) {
   .contenttop{
     float: left;
     width: 100%;
@@ -31,7 +31,7 @@ hr {
   border-width: 1px;
 }
 
-@media(max-width: 700px) {
+@media(max-width: 768px) and (max-width: 1024px) {
     hr{
     float: left;
     width: 100%;
@@ -44,7 +44,14 @@ hr {
   display: block;
 }
 
-@media(max-width: 700px) {
+@media(max-width: 768px) {
+  .container-class {
+    top: 0;
+    width:100%;
+    float:left;
+  }
+}
+@media(min-width: 1199px) {
   .container-class {
     top: 0;
     width:100%;
@@ -58,7 +65,7 @@ hr {
   padding: 40px;
   display: inline-block;
 }
-@media(max-width: 700px) {
+@media(max-width: 768px) and (max-width: 1024px) {
   .content-box {
     float:left;
     width:100%;
@@ -73,7 +80,7 @@ hr {
  padding-left: 50px;
 
 }
-@media(max-width: 760px) {
+@media(max-width: 768px) and (max-width: 1024px) {
   .maintitle {
     width:100%;
     float: left;
@@ -85,6 +92,9 @@ hr {
   line-height: 2;
   font-weight: 700;
   color: #45445B;
+  font-family: Montserrat, sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
   text-align: center;
   display:inline-block;
   justify-content: center;
@@ -104,7 +114,7 @@ hr {
   padding-left: 20px;
   display:inline-block;
 }
-@media(max-width: 700px) {
+@media(max-width: 768px) and (max-width: 1024px) {
   .logo-top, .maintitle{
     float: left;
     width: auto;
@@ -145,14 +155,14 @@ hr {
     text-align: center;
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 768px) and (max-width: 1024px) {
   .bottom-footer {
     float: left;
     width: 100%;
   }
 }
 
-@media(max-width: 700px) {
+@media(max-width: 768px) and (max-width: 1024px) {
   .bottom-footer {
     float: left;
     width: 100%;
@@ -193,7 +203,7 @@ hr {
   backface-visibility: hidden;
 }
 
-@media(max-width: 700px) {
+@media(max-width: 768px) and (max-width: 1024px) {
   .photos-container, .image-home {
     float: left;
     width: 100%;
@@ -208,6 +218,8 @@ hr {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  font-family: 'Baskerville', serif;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -218,6 +230,26 @@ hr {
 .photos-container:hover .middle {
   opacity: 1;
 }
+
+.photos-link {
+  padding: 8px 16px;
+  background: #767286;
+  line-height: 2;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 10px;
+  display: inline-block;
+}
+
+.photos-link1:hover {
+  background-color: #5B2423;
+}
+  @media(max-width: 768px) {
+    .prototype-links, .project-link {
+      display:none;
+    }
+  }
+
 /*** typography ***/
 h1 {
   color: #45445B;
@@ -230,7 +262,7 @@ h1 {
 
 }
 
-@media(max-width: 700px) {
+@media(max-width: 768px) and (max-width: 1024px) {
   h1 {
     font-size: 22px;
   }
@@ -245,7 +277,7 @@ h2 {
   text-align: center;
   margin-right: 8px;
 }
-@media(max-width: 700px) {
+@media(max-width: 768px) and (max-width: 1024px) {
   h2 {
     font-size: 22px;
     line-height: 20px;
@@ -259,7 +291,7 @@ h3 {
   line-height: 10%;
   text-align: left;
 }
-@media(max-width: 700px) {
+@media(max-width: 768px) and (max-width: 1024px) {
   h3 {
     font-size: 18px;
     line-height: 22px;
@@ -272,7 +304,7 @@ h4 {
   font-size: 50px;
   line-height: 10%;
 }
-    @media(max-width: 700px) {
+    @media(max-width: 768px) and (max-width: 1024px) {
       h4 {
       font-size: 22px;
       line-height: 16px;
@@ -290,7 +322,7 @@ h5 {
   text-decoration-line: underline;
 
 }
-  @media(max-width: 700px) {
+  @media(max-width: 768px) and (max-width: 1024px) {
     h4 {
     font-size: 18px;
     line-height: 16px;
@@ -306,7 +338,7 @@ h6 {
   margin: 0;
 
 }
-@media(max-width: 700px) {
+@media(max-width: 768px) and (max-width: 1024px) {
   h6 {
     font-size: 26px;
     line-height: 20px;
@@ -314,18 +346,17 @@ h6 {
 }
 
 p {
-  color: #696B6F;
+  color: #222138;
   font-family: Montserrat, sans-serif;
   font-weight: lighter;
   font-size: 14px;
   line-height: 26px;
-  text-align: justify;
+  text-align: left;
 }
-@media(max-width: 700px) {
+@media(max-width: 768px) and (max-width: 1024px) {
   p {
     font-size: 16px;
     line-height: 26px;
-    text-align: left;
   }
 }
 
@@ -335,13 +366,12 @@ p.text {
   font-weight: lighter;
   font-size: 14px;
   line-height: 23px;
-  text-align: justify;
+  text-align: left;
 }
-@media(max-width: 700px) {
+@media(max-width: 768px) and (max-width: 1024px) {
   p.text {
     font-size: 16px;
     line-height: 26px;
-    text-align: left;
   }
 }
 
@@ -366,7 +396,7 @@ ul.box li {
   color: #696B6F;
   padding:5px;
 }
-@media(max-width: 700px) {
+@media(max-width: 768px) and (max-width: 1024px) {
   .ul, .li {
     float:left;
     width:100%;
@@ -378,7 +408,7 @@ ul.box li {
 /*** about page ***/
 
 .about-image{
-  background-image: url("/images/aboutimage.png");
+  background-image: url(".../images/aboutimage.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size:contain;
@@ -403,7 +433,7 @@ ul.box li {
 .project-link1:hover {
   background-color: #5B2423;
 }
-  @media(max-width: 700px) {
+  @media(max-width: 768px) and (max-width: 1024px) {
     .prototype-links, .project-link {
       float:left;
       width:100%;
@@ -412,8 +442,6 @@ ul.box li {
       font-size: 14px;
     }
   }
-
-
 /*** project page boxes ***/
 
 img.center {
@@ -433,7 +461,7 @@ img.center {
   word-wrap: break-word;
   float:left;
 }
-@media(max-width: 700px) {
+@media(max-width: 768px) and (max-width: 1024px) {
   .content-shadow{
     float: left;
     width: 100%;
@@ -449,7 +477,7 @@ img.center {
   padding:10px;
   margin-top: 15px;
 }
-@media(max-width: 700px) {
+@media(max-width: 768px) and (max-width: 1024px) {
   .split-1 {
     float:left;
     width:100%;
@@ -464,7 +492,7 @@ img.center {
   padding: 10px;
   margin-top: 15px;
 }
-@media(max-width: 700px) {
+@media(max-width: 768px) and (max-width: 1024px) {
   .split-2 {
     float:left;
     width:100%;
@@ -479,7 +507,7 @@ img.center {
   width:40%;
   padding: 10px;
 }
-@media(max-width: 700px) {
+@media(max-width: 768px) and (max-width: 1024px) {
   .split-3 {
     float:left;
     width:100%;
@@ -494,7 +522,7 @@ img.center {
   width:45%;
   padding: 10px;
 }
-@media(max-width: 700px) {
+@media(max-width: 768px) and (max-width: 1024px) {
   .split-4 {
     float:left;
     width:100%;
@@ -510,7 +538,7 @@ img.center {
   padding: 10px;
   margin-top: 15px;
 }
-@media(max-width: 700px) {
+@media(max-width: 768px) and (max-width: 1024px) {
   .split-5 {
     float:left;
     width:100%;
@@ -524,7 +552,7 @@ img.center {
   width:38%;
   padding: 10px;
 }
-@media(max-width: 700px) {
+@media(max-width: 768px) and (max-width: 1024px) {
   .split-6 {
     float:left;
     width:100%;
@@ -540,7 +568,7 @@ img.center {
   padding: 10px;
   margin-top: 15px;
 }
-@media(max-width: 700px) {
+@media(max-width: 768px) and (max-width: 1024px) {
   .split-7 {
     float:left;
     width:100%;
@@ -556,7 +584,7 @@ img.center {
   margin-top: 15px;
 }
 
-@media(max-width: 700px) {
+@media(max-width: 768px) and (max-width: 1024px) {
   .split-8 {
     float:left;
     width:100%;
@@ -571,7 +599,7 @@ img.center {
   padding: 10px;
   display: inline-block;
 }
-@media(max-width: 700px) {
+@media(max-width: 768px) and (max-width: 1024px) {
   .split-background {
     float:left;
     width:100%;
