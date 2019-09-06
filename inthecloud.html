@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/7ba9ab4ea5.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146723403-1"></script>
    <script>
@@ -21,18 +22,22 @@
     <main class="container-class">
       <header class="contenttop">
         <nav>
-          <ul class="menu">
-            <li><a href="/about.html"><span class="main-link main-link1">About</span></a></li>
-            <li><a href="http://laurenmcelaney.design"><span class="main-link main-link1">Work</span></a></li>
-          </ul>
+          <div id="navbar">
+              <ul class="menu">
+                <a href="/index.html"><img class="logo-top" src="images/logolm.png"></a>
+                <li><a href="http://laurenmcelaney.design"><span class="main-link main-link1">Work</span></a></li>
+                <li><a href="/about.html"><span class="main-link main-link1">About</span></a></li>
+                <li><a href="/contact.html"><span class="main-link main-link1">Contact</span></a></li>
+              </ul>
+          </div>
         </nav>
-        <a href="/index.html"><img class="logo-top" src="images/logolm.png" width="100%"></a>
             <div class="maintitle">
           <h4>Lauren McElaney</h4><h3>UI/UX Designer based in Los Angeles.</h3></div>
       </header>
-         <button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button>
           <section class="content-box">
             <hr>
+            <div class="arrow bounce">
+            <a class="fas fa-chevron-down fa-2x"></a></div>
             <h1>In The Cloud</h1>
 
 
@@ -66,7 +71,7 @@
             </div></div>
           <div class="content-shadow">
             <h5>Process</h5>
-            <p class="text">Why is user experience so important?  In simple terms, the users
+            <p class="text-box">Why is user experience so important?  In simple terms, the users
               experience needs to be of utmost importance when designing a brand.
               An easily operated application means that the user will develop a
               relationship with the brand and thus keep coming back.  Lacking in
@@ -77,17 +82,25 @@
               people rather than statistics. The results of the surveys taught myself
               that features like being able to organize files into folders and sharing
               a single item with another person, needed to be included as well as
-              expanding the application to allowing access both offline and online.</p></div>
+              expanding the application to allowing access both offline and online.</p>
+          </div>
           <div class="content-shadow">
             <h5>User Surveys</h5>
-              <p class="text">Why is user experience so important?  In simple terms,
+              <p class="text-box">Why is user experience so important?  In simple terms,
                 the users experience needs to be of utmost importance when designing a brand.
                 An easily operated application means that the user will develop a
                 relationship with the brand and thus keep coming back.
                 Lacking in understanding when it comes to who the target user
                 creates a volatile relationship with both the brand as well as the consumers.
                 So, what exactly do users really want?</p>
-                <div class="split-5"><img src="images/surveyframe.png" width="100%"></div>
+              </div>
+                <div class="split-5">
+                  <a href="#img1"><img src="images/surveyframestorage.png" class="thumbnail"></a>
+              <!-- container for lightbox -->
+                <a href="#_" class="lightbox" id="img1">
+                  <img src="images/surveyframestorage.png">
+                </a>
+               </div>
                 <div class="split-6">
                   <ul class="box"><p class="text-bold">The Results:</p>
                   <li>94.1% Want more storage capacity</li>
@@ -99,7 +112,7 @@
 
           <div class="content-shadow">
             <h5>User Personas</h5>
-            <p class="text">Once the surveys were completed and the results had been gathered,
+            <p class="text-box">Once the surveys were completed and the results had been gathered,
               the next step was to develop user personas.  The two personas
               were created based on the audience that is expected to be using
               this platform.</p>  <div class="split-3">
@@ -129,55 +142,76 @@
                   <li>Lack of options</li>
                   <li>Inability to add users to projects</li></ul>
                 </div></div>
-              <div class="split-3">
+              <div class="content-shadow">
                 <h5>User Stories & Sitemap</h5>
-                  <p class="text">The user stories and sitemap was developed to distinguish features
+                  <p class="text-box">The user stories and sitemap was developed to distinguish features
                   that will be included into it’s priority and importance.  Once that
                   was sorted, I moved onto the user flows taking that information,
                   focused on the priorities from the list to develop a site map for a
                   better flow when it comes to laying everything out.</p>
-              </div>
-              <div class="split-7">
-                <img src="images/sitemapuserflow.png" width="100%">
+                <a href="#img2"><img src="images/sitemapuserflow.png" class="thumbnail"></a>
+            <!-- container for lightbox -->
+              <a href="#_" class="lightbox" id="img2">
+                <img src="images/sitemapuserflow.png">
+              </a>
               </div>
                   <div class="content-shadow">
                     <h5>Wireframing</h5>
-                    <p class="text">The development of wireframes held an important part of the design
+                    <p class="text-box">The development of wireframes held an important part of the design
                     process because it allowed myself to analyze the structure and the
                     responsiveness of the design.  It also helped myself adjust interactions
                     that could cause issues when the prototype was completed.  The wireframes
                     displayed here are detailing the basic construction of the placement and
                     layout of elements that are unique to the project.</p>
                     <img src="images/wireframe.png" class="center" width="100%">
+                    <br>
+                    <a href="https://www.figma.com/file/BYSeUfN5HJQe746WiJZWAiT6/CloudStorage-Wireframing?node-id=0%3A1" target="_blank" title="View Wireframes"><span class="link-small link-hoover">View Wireframes</span></a>
                   </div>
 
-                    <div class="split-3">
+                    <div class="content-shadow">
                       <h5>Branding & User Testing</h5>
-                      <p class="text">During this phase, I collected the designs and research I had
+                      <p class="text-box">During this phase, I collected the designs and research I had
                       previously performed through user testing and established a high-fidelity
                       mockups that could be tested through the clickable prototypes.
-                    </p><p class="text">
+                    </p><p class="text-box">
                       In the beginning stages of the logo creation, I first sketched
                       out possible options that we could develop into concrete designs.
                       Once I narrowed down the idea and found a concept I liked, I then
                       moved on to refining it into a monochromatic version that could be
                       adjusted and display using the chosen color scheme.</p>
-                    </div>
-                      <div class="split-7"><img src="images/logos.png" width="100%"><img src="images/colors.png" width="100%">
+                        <a href="#img3"><img src="images/branding.png" class="thumbnail"></a>
+                    <!-- container for lightbox -->
+                      <a href="#_" class="lightbox" id="img3">
+                        <img src="images/branding.png">
+                      </a>
                       </div>
 
                     <div class="content-shadow">
                       <h5>Preference Testing</h5>
-                      <p class="text">For the preference testing portion of the mockups,
+                      <p class="text-box">For the preference testing portion of the mockups,
                       I analyzed three different designs with each have two variations.
                       From the results, I was able to gather which display was more visually
                       appealing to the users eyes.</p>
-                      <img src="images/preferencetesting2.png" width="100%">
+                      <a href="#img4"><img src="images/preferencetesting1.png" class="thumbnail"></a>
+                  <!-- container for lightbox -->
+                    <a href="#_" class="lightbox" id="img4">
+                      <img src="images/preferencetesting1.png">
+                    </a>
+                    <a href="#img5"><img src="images/preferencetesting2.png" class="thumbnail"></a>
+                <!-- container for lightbox -->
+                  <a href="#_" class="lightbox" id="img5">
+                    <img src="images/preferencetesting2.png">
+                  </a>
+                  <a href="#img6"><img src="images/preferencetesting3.png" class="thumbnail"></a>
+              <!-- container for lightbox -->
+                <a href="#_" class="lightbox" id="img6">
+                  <img src="images/preferencetesting3.png">
+                </a>
                     </div>
 
-                    <div class="split-3">
+                    <div class="content-shadow">
                       <h5>Usability Testing</h5>
-                      <p class="text">For the usability testing,  the tests that were excuted were meant
+                      <p class="text-box">For the usability testing,  the tests that were excuted were meant
                       to gather results from different tiers of experience levels that
                       could perform specific tasks.  Having a broad range of expert levels
                       provided me with valuable insight into changes and adjustments that
@@ -186,15 +220,13 @@
                       IOS - Signing up for an account<br>
                       IOS - Creating a folder<br>
                       Desktop- Uploading a file</p>
-                    </div>
-                    <div class="split-8">  <img src="images/desktopusability.png" width="100%">
-                    </div>
-                    <div class="split-8"><img src="images/mobileusability.png" width="100%">
+                      <img src="images/desktopusability.png" >
+                    <img src="images/mobileusability.png" >
                     </div>
 
                     <div class="content-shadow">
                     <h5>The Conclusion</h5>
-                    <p class="text">From start to finish, the endeavour to create an application that
+                    <p class="text-box">From start to finish, the endeavour to create an application that
                     focused on cloud storage was both exciting as well as difficult.
                     While designing and developing the project, I cultivated a better
                     understanding of the importance of not rushing straight into the
@@ -219,20 +251,19 @@
                   </section>
       </main>
     <script>
-        // When the user scrolls down 20px from the top of the document, show the button
-          window.onscroll = function() {scrollFunction()};
-          function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-              document.getElementById("myBtn").style.display = "block";
-            } else {
-              document.getElementById("myBtn").style.display = "none";
-            }
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+
+        var header = document.getElementById("navbar");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
           }
-          // When the user clicks on the button, scroll to the top of the document
-          function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-          }
+        }
    </script>
   </body>
 </html>
