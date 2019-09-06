@@ -91,6 +91,12 @@ hr {
 .main-link1:hover {
   color: #5B2423;
 }
+@media(max-width: 768px) and (max-width: 1024px) {
+  .main-link, .main-link1 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
 
 .logo-top {
   width: 106px;
@@ -104,6 +110,7 @@ hr {
     width: auto;
     max-width: 100% ;
     height: auto ;
+    padding: 20px;
   }
 }
 
@@ -149,11 +156,25 @@ hr {
   color: #340C18;
   padding: .5rem;
 }
+@media(max-width: 768px) and (max-width: 1024px) {
+  .menu {
+    font-size: 16px;
+    float: right;
+    width: 50%;
+  }
+}
 
 #navbar {
   overflow: hidden;
   background-color: white;
   top:0;
+}
+@media(max-width: 768px) and (max-width: 1024px) {
+  #navbar {
+    top: 0;
+    float: left;
+    position: fixed;
+  }
 }
 
 .bottom-footer {
