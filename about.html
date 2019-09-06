@@ -8,32 +8,37 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146723403-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-146723403-1');
-    </script>
+    <script src="https://kit.fontawesome.com/7ba9ab4ea5.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146723403-1"></script>
+   <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+     gtag('config', 'UA-146723403-1');
+   </script>
   </head>
   <body>
     <main class="container-class">
       <header class="contenttop">
         <nav>
-          <ul class="menu">
-            <li><a href="/about.html"><span class="main-link main-link1">About</span></a></li>
-            <li><a href="http://laurenmcelaney.design"><span class="main-link main-link1">Work</span></a></li>
-          </ul>
-        </nav>
-        <a href="/index.html"><img class="logo-top" src="images/logolm.png" width="100%"></a>
+          <div id="navbar">
+              <ul class="menu">
+                <a href="/index.html"><img class="logo-top" src="images/logolm.png"></a>
+                <li><a href="http://laurenmcelaney.design"><span class="main-link main-link1">Work</span></a></li>
+                <li><a href="/about.html"><span class="main-link main-link1">About</span></a></li>
+                <li><a href="/contact.html"><span class="main-link main-link1">Contact</span></a></li>
+              </ul>
+          </div>
+         </nav>
             <div class="maintitle">
           <h4>Lauren McElaney</h4><h3>UI/UX Designer based in Los Angeles.</h3></div>
-      </header>
-
+          </header>
+          <p>
           <section class="content-box">
             <hr>
+            <div class="arrow bounce">
+            <a class="fas fa-chevron-down fa-2x"></a></div>
       <div class="content-shadow">
           <div class="about-image"></div>
           <h4>The Designer</h4>
@@ -59,14 +64,29 @@
           <footer class="bottom-footer">
     <hr>
           <div class="bottom-footer-links">
-                        <a href="https://laurenmcelaney.github.io" target="_blank"><img src="images/github.png"></a>
-                        <a href="https://www.linkedin.com/in/lauren-mcelaney-b3b33561" target="_blank"><img src="images/linkedin.png"></a>
-                        <a href="https://instagram.com/laurenmcelaney" target="_blank"><img src="images/instagram.png"></a>
-                        <a href="https://twitter.com/laurenmcelaney" target="_blank"><img src="images/twitter.png"></a>
-                        <a href="mailto:mcelaneyl@gmail.com"><img src="images/mail.png"></a>
-           </div>
+            <a href="laurenmcelaney.github.io" target="_blank"><img src="images/github.png"></a>
+                           <a href="www.linkedin.com/in/lauren-mcelaney-b3b33561" target="_blank"><img src="images/linkedin.png"></a>
+                           <a href="instagram.com/laurenmcelaney" target="_blank"><img src="images/instagram.png"></a>
+                           <a href="twitter.com/laurenmcelaney" target="_blank"><img src="images/twitter.png"></a>
+                           <a href="mailto:mcelaneyl@gmail.com"><img src="images/mail.png"></a>
+          </div>
         </footer>
       </section>
-    </main>
+     </main>
+     <script>
+         // When the user scrolls the page, execute myFunction
+         window.onscroll = function() {myFunction()};
+
+         var header = document.getElementById("navbar");
+         var sticky = header.offsetTop;
+
+         function myFunction() {
+           if (window.pageYOffset > sticky) {
+             header.classList.add("sticky");
+           } else {
+             header.classList.remove("sticky");
+           }
+         }
+    </script>
   </body>
 </html>
