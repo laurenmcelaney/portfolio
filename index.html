@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/7ba9ab4ea5.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146723403-1"></script>
    <script>
@@ -21,22 +22,28 @@
     <main class="container-class">
       <header class="contenttop">
         <nav>
-          <ul class="menu">
-            <li><a href="/about.html"><span class="main-link main-link1">About</span></a></li>
-            <li><a href="http://laurenmcelaney.design"><span class="main-link main-link1">Work</span></a></li>
-          </ul>
-        </nav>
-        <a href="/index.html"><img class="logo-top" src="images/logolm.png" width="100%"></a>
+          <div id="navbar">
+              <ul class="menu">
+                <a href="/index.html"><img class="logo-top" src="images/logolm.png"></a>
+                <li><a href="http://laurenmcelaney.design"><span class="main-link main-link1">Work</span></a></li>
+                <li><a href="/about.html"><span class="main-link main-link1">About</span></a></li>
+                <li><a href="/contact.html"><span class="main-link main-link1">Contact</span></a></li>
+              </ul>
+          </div>
+         </nav>
             <div class="maintitle">
           <h4>Lauren McElaney</h4><h3>UI/UX Designer based in Los Angeles.</h3></div>
-      </header>
+          </header>
           <p>
           <section class="content-box">
-            <div class="photos-container">
-              <img src="images/projectinthecloud.png" alt="project" class="image-home" width="100%">
-              <div class="middle">
+            <div class="arrow bounce">
+            <a class="fas fa-chevron-down fa-2x"></a></div>
+            <h1>Recent Work</h1>
+            <div class="index-pagetop">
+                <img src="images/cloudcase.png" alt="project" width="100%">
+                <h2>In The Cloud</h2>
+                <p class="text-big"> A cloud storage application developed to make saving files easier.</p>
                 <a href="inthecloud.html" title="View Case Study"><span class="photos-link photos-link1">View Case Study</span></a>
-              </div>
             </div>
             <footer class="bottom-footer">
       <hr>
@@ -50,6 +57,21 @@
             </div>
           </footer>
       </section>
-    </main>
+     </main>
+     <script>
+         // When the user scrolls the page, execute myFunction
+         window.onscroll = function() {myFunction()};
+
+         var header = document.getElementById("navbar");
+         var sticky = header.offsetTop;
+
+         function myFunction() {
+           if (window.pageYOffset > sticky) {
+             header.classList.add("sticky");
+           } else {
+             header.classList.remove("sticky");
+           }
+         }
+    </script>
   </body>
 </html>
