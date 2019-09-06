@@ -103,6 +103,7 @@ hr {
   height: auto;
   display:inline-block;
   float:left;
+  margin: 10px;
 }
 @media(max-width: 768px) and (max-width: 1024px) {
   .logo-top, .maintitle{
