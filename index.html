@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
     <title>Lauren McElaney</title>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/7ba9ab4ea5.js"></script>
@@ -17,61 +18,108 @@
      gtag('js', new Date());
      gtag('config', 'UA-146723403-1');
    </script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
   </head>
   <body>
     <main class="container-class">
       <header class="contenttop">
         <nav>
-          <div id="navbar">
+          <section id="navbar">
             <a href="/index.html"><img class="logo-top" src="images/logolm.png"></a>
-              <ul class="menu">
-                <li><a href="http://laurenmcelaney.design"><span class="main-link main-link1">Work</span></a></li>
-                <li><a href="/about.html"><span class="main-link main-link1">About</span></a></li>
-                <li><a href="mailto:mcelaneyl@gmail.com"><span class="main-link main-link1">Contact</span></a></li>
-              </ul>
-          </div>
-         </nav>
+              <div class="menu" id="myTopnav">
+              <a href="http://laurenmcelaney.design">Work</a>
+                <a href="/about.html">About</a>
+                <a href="mailto:mcelaneyl@gmail.com">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                    </a>
+                  </div>
+                </section>
+        </nav>
             <div class="maintitle">
           <h4>Lauren McElaney</h4><h3>UI/UX Designer based in Los Angeles.</h3></div>
-          </header>
-          <p>
-          <section class="content-box">
-            <div class="arrow bounce">
-            <a class="fas fa-chevron-down fa-2x"></a></div>
+      </header>
+
+        <section class="content-box">
+
+              <hr>
+              <div class="arrow">
+            <a href="#section2" class="fas fa-arrow-down fa-2x"></a>
+          </div>
+
             <h1>Recent Work</h1>
-            <div class="index-pagetop">
-                <img src="images/cloudcase.png" alt="project" width="100%">
+            <div class="index-pagetop" id="section2">
+                <img src="images/cloudcase.png" alt="project" width="50%">
                 <h2>In The Cloud</h2>
                 <p class="text-big"> A cloud storage application developed to make saving files easier.</p>
                 <a href="inthecloud.html" title="View Case Study"><span class="photos-link photos-link1">View Case Study</span></a>
             </div>
+
             <footer class="bottom-footer">
       <hr>
-              <h1>Let's Connect</h1>
-            <div class="bottom-footer-links">
-               <a href="https://laurenmcelaney.github.io" target="_blank"><img src="images/github.png"></a>
-               <a href="https://www.linkedin.com/in/lauren-mcelaney-b3b33561" target="_blank"><img src="images/linkedin.png"></a>
-               <a href="https://instagram.com/laurenmcelaney" target="_blank"><img src="images/instagram.png"></a>
-               <a href="https://twitter.com/laurenmcelaney" target="_blank"><img src="images/twitter.png"></a>
-               <a href="mailto:mcelaneyl@gmail.com"><img src="images/mail.png"></a>
-            </div>
-          </footer>
-      </section>
-     </main>
-     <script>
-         // When the user scrolls the page, execute myFunction
-         window.onscroll = function() {myFunction()};
+                <h1>Let's Connect</h1>
+              <div class="bottom-footer-links">
+                <a href="https://laurenmcelaney.github.io" target="_blank"><img src="images/github.png"></a>
+                <a href="https://www.linkedin.com/in/lauren-mcelaney-b3b33561" target="_blank"><img src="images/linkedin.png"></a>
+                <a href="https://instagram.com/laurenmcelaney" target="_blank"><img src="images/instagram.png"></a>
+                <a href="https://twitter.com/laurenmcelaney" target="_blank"><img src="images/twitter.png"></a>
+                <a href="mailto:mcelaneyl@gmail.com"><img src="images/mail.png"></a>
+              </div>
+            </footer>
+          </section>
+          <script>
+          function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "menu") {
+            x.className += " responsive";
+          } else {
+            x.className = "menu";
+          }
+          }
+          </script>
+        </main>
+      <script>
 
-         var header = document.getElementById("navbar");
-         var sticky = header.offsetTop;
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
 
-         function myFunction() {
-           if (window.pageYOffset > sticky) {
-             header.classList.add("sticky");
-           } else {
-             header.classList.remove("sticky");
-           }
-         }
-    </script>
-  </body>
+var header = document.getElementById("navbar");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
 </html>
