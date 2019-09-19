@@ -461,6 +461,13 @@ p.text-bold {
   text-align: center;
   text-decoration-line: underline;
 }
+p.text-footer {
+  color: #D1D1D1;
+  font-family: Montserrat, sans-serif;
+  font-size: 11px;
+  padding-top: 20px;
+  text-align: center;
+}
 
 .wrapper-grid-survey {
   display: inline-grid;
