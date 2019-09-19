@@ -238,7 +238,9 @@ hr {
   margin: 8% 0;
   color: black;
 }
-
+.blackarrow{
+  color:black;
+}
 
 .index-pagetop{
   padding-top: 70px;
