@@ -49,39 +49,31 @@ $(document).ready(function(){
   </head>
   <body>
     <main class="container-class">
-      <header class="contenttop">
-        <nav>
-          <section id="navbar">
-            <a href="/index.html"><img class="logo-top" src="images/logolm.png"></a>
-              <div class="menu" id="myTopnav">
-              <a href="http://laurenmcelaney.design">Work</a>
-                <a href="/about.html">About</a>
-                <a href="mailto:mcelaneyl@gmail.com">Contact</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                    </a>
-                  </div>
-                </section>
-        </nav>
-            <div class="maintitle">
-          <h4>Lauren McElaney</h4><h3>UI/UX Designer based in Los Angeles.</h3></div>
+      <header class="header">
+      <a href="/index.html"><img class="logo-top" src="images/logolm.png"></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="http://laurenmcelaney.design">Work</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
       </header>
+      <div class="maintitle">
+    <h1>In The Cloud</h1></div>
 
         <section class="content-box">
-
-              <hr>
-              <div class="arrow">
-            <a href="#section2" class="fas fa-arrow-down fa-2x blackarrow"></a>
+          <hr>
+          <div class="arrow blackarrow">
+          <a href="#section2" class="fas fa-arrow-down fa-2x blackarrow"></a>
           </div>
-
-            <h1>In The Cloud</h1>
 
             <img src="images/cloudheader.png" class="center" width="100%">
 <br>
-            <h1>A cloud based storage application that gives users more of what they want and less of what they don't.</h1>
+            <h2>A cloud based storage application that gives users more of what they want and less of what they don't.</h2>
           <div class="prototype-links">
-              <a href="https://www.figma.com/proto/aUtBPlHHuNLyp5ED2JY42wUx/Cloud-Storage-wireframing-Prototype?node-id=12%3A290&viewport=220%2C278%2C0.03125&scaling=scale-down" target="_blank" title="View Desktop"><span class="project-link project-link1">View Desktop Prototype</span></a>
-              <a href="https://www.figma.com/proto/QMomZTY2q1bLFtLvU6lCLqED/Cloud-Mobile-Prototype?node-id=9%3A0&viewport=475%2C374%2C0.03125&scaling=min-zoom" target="_blank" title="View Mobile"><span class="project-link project-link1">View Mobile Prototype</span></a>
+              <a href="https://www.figma.com/proto/aUtBPlHHuNLyp5ED2JY42wUx/Cloud-Storage-wireframing-Prototype?node-id=12%3A290&viewport=220%2C278%2C0.03125&scaling=scale-down" target="_blank" title="View Desktop"><span class="link-small link-hoover">View Desktop Prototype</span></a>
+              <a href="https://www.figma.com/proto/QMomZTY2q1bLFtLvU6lCLqED/Cloud-Mobile-Prototype?node-id=9%3A0&viewport=475%2C374%2C0.03125&scaling=min-zoom" target="_blank" title="View Mobile"><span class="link-small link-hoover">View Mobile Prototype</span></a>
           </div>
           <div class="rolls-divider" id="section2">
               <ul class="rolls"><i class="fas fa-pencil-ruler fa-6x"></i><p class="text-bold">Role:</p>
@@ -204,15 +196,15 @@ $(document).ready(function(){
                   was sorted, I moved onto the user flows taking that information,
                   focused on the priorities from the list to develop a site map for a
                   better flow when it comes to laying everything out.</p>
-                  <img src="images/userstories.png" width="30%">
-                <img src="images/userflow.png" width="30%">
-                <img src="images/sitemap.png" width="30%">
-                <p>
-                  <a href="https://docs.google.com/spreadsheets/d/1CGLQIZSEgGgawj5TQxs9uVZfFZmPc-ip9JMQ0cGtt_8/edit?usp=sharing" target="_blank"><span class="link-small link-hoover">View User Stories</span></a>
-                  <a href="https://drive.google.com/file/d/1Hsr4JgxXH9ijqbGIxUNKhjk6UtI5UyUc/view?usp=sharing" target="_blank"><span class="link-small link-hoover">View User Flow</span></a>
-                  <a href="https://drive.google.com/file/d/1i3e56zEHxABfI7z9d1Z7qq40e1Olafg3/view?usp=sharing" target="_blank"><span class="link-small link-hoover">View Sitemap</span></a>
-
+                  <div class="images-box">
+                  <img src="images/userstories.png" >
+                <img src="images/userflow.png" >
+                <img src="images/sitemap.png" >
               </div>
+              <a href="https://docs.google.com/spreadsheets/d/1CGLQIZSEgGgawj5TQxs9uVZfFZmPc-ip9JMQ0cGtt_8/edit?usp=sharing" target="_blank"><span class="link-small link-hoover">View User Stories</span></a>
+            <a href="https://drive.google.com/file/d/1Hsr4JgxXH9ijqbGIxUNKhjk6UtI5UyUc/view?usp=sharing" target="_blank"><span class="link-small link-hoover">View User Flow</span></a>
+            <a href="https://drive.google.com/file/d/1i3e56zEHxABfI7z9d1Z7qq40e1Olafg3/view?usp=sharing" target="_blank"><span class="link-small link-hoover">View Sitemap</span></a>
+            </div>
                   <div class="content-shadow">
 
                     <h5>Wireframing</h5>
@@ -291,7 +283,7 @@ $(document).ready(function(){
 
                     <footer class="bottom-footer">
               <hr>
-                        <h1>Let's Connect</h1>
+                        <h2>Let's Connect</h2>
                       <div class="bottom-footer-links">
                         <a href="https://laurenmcelaney.github.io" target="_blank"><img src="images/github.png"></a>
                         <a href="https://www.linkedin.com/in/lauren-mcelaney-b3b33561" target="_blank"><img src="images/linkedin.png"></a>
