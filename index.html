@@ -49,42 +49,40 @@ $(document).ready(function(){
   </head>
   <body>
     <main class="container-class">
-      <header class="contenttop">
-        <nav>
-          <section id="navbar">
-            <a href="/index.html"><img class="logo-top" src="images/logolm.png"></a>
-              <div class="menu" id="myTopnav">
-              <a href="http://laurenmcelaney.design">Work</a>
-                <a href="/about.html">About</a>
-                <a href="mailto:mcelaneyl@gmail.com">Contact</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                    </a>
-                  </div>
-                </section>
-        </nav>
+      <header class="header">
+      <a href="/index.html"><img class="logo-top" src="images/logolm.png"></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="http://laurenmcelaney.design">Work</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+      </header>
             <div class="maintitle">
           <h4>Lauren McElaney</h4><h3>UI/UX Designer based in Los Angeles.</h3></div>
-      </header>
+
 
         <section class="content-box">
 
               <hr>
-              <div class="arrow">
+              <div class="arrow blackarrow">
             <a href="#section2" class="fas fa-arrow-down fa-2x blackarrow"></a>
           </div>
-
-            <h1>Recent Work</h1>
-            <div class="index-pagetop" id="section2">
-                <img src="images/cloudcase.png" alt="project" width="50%">
-                <h2>In The Cloud</h2>
+          <h1>Recent Work</h1>
+            <div class="index-image" id="section2">
+                <img src="images/cloudcase.png" alt="project" width="100%">
+                <div class="content">
+                <h5>In The Cloud</h5>
                 <p class="text-big"> A cloud storage application developed to make saving files easier.</p>
-                <a href="inthecloud.html" title="View Case Study"><span class="photos-link photos-link1">View Case Study</span></a>
+                <a href="inthecloud.html" title="View Case Study"><span class="link-small link-hoover">View Case Study</span></a>
+
+              </div>
             </div>
 
             <footer class="bottom-footer">
       <hr>
-                <h1>Let's Connect</h1>
+                <h2>Let's Connect</h2>
               <div class="bottom-footer-links">
                 <a href="https://laurenmcelaney.github.io" target="_blank"><img src="images/github.png"></a>
                 <a href="https://www.linkedin.com/in/lauren-mcelaney-b3b33561" target="_blank"><img src="images/linkedin.png"></a>
@@ -92,7 +90,6 @@ $(document).ready(function(){
                 <a href="https://twitter.com/laurenmcelaney" target="_blank"><img src="images/twitter.png"></a>
                 <a href="mailto:mcelaneyl@gmail.com"><img src="images/mail.png"></a>
               </div>
-              <p class="text-footer">copyright 2019 designed and developed by Lauren McElaney</p>
             </footer>
           </section>
           <script>
