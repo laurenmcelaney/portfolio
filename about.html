@@ -49,29 +49,25 @@ $(document).ready(function(){
   </head>
   <body>
     <main class="container-class">
-      <header class="contenttop">
-        <nav>
-          <section id="navbar">
-            <a href="/index.html"><img class="logo-top" src="images/logolm.png"></a>
-              <div class="menu" id="myTopnav">
-              <a href="http://laurenmcelaney.design">Work</a>
-                <a href="/about.html">About</a>
-                <a href="mailto:mcelaneyl@gmail.com">Contact</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                    </a>
-                  </div>
-                </section>
-        </nav>
+      <header class="header">
+      <a href="/index.html"><img class="logo-top" src="images/logolm.png"></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="http://laurenmcelaney.design">Work</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+      </header>
             <div class="maintitle">
           <h4>Lauren McElaney</h4><h3>UI/UX Designer based in Los Angeles.</h3></div>
-      </header>
+
 
         <section class="content-box">
 
               <hr>
-       <div class="about-image"></div>
-      <div class="about-box">
+      <div class="about-image"></div>
+        <div class="about-box">
           <h4>The Designer</h4>
             <p class="text-box">
               I was 13 when I got my first laptop.  It was the newly launched apple white macbook.  Before
@@ -103,7 +99,6 @@ $(document).ready(function(){
               <a href="https://twitter.com/laurenmcelaney" target="_blank"><img src="images/twitter.png"></a>
               <a href="mailto:mcelaneyl@gmail.com"><img src="images/mail.png"></a>
             </div>
-            <p class="text-footer">copyright 2019 designed and developed by Lauren McElaney</p>
           </footer>
         </section>
         <script>
