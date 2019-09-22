@@ -267,6 +267,7 @@ hr {
     float: left;
     text-align: center;
     margin-top: 160px;
+    padding: 20px;
   }
 }
 
@@ -680,6 +681,11 @@ ul.box li {
   background-size:contain;
   height: 300px;
   width: 100%;
+}
+@media(max-width: 768px) and (max-width: 1024px) {
+  .about-image {
+    margin-top: 50px;
+  }
 }
 
 .about-box{
