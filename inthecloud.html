@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
     <title>Lauren McElaney</title>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rozha+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -23,21 +24,17 @@
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
-
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();
-
       // Store hash
       var hash = this.hash;
-
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
-
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
@@ -50,7 +47,7 @@ $(document).ready(function(){
   <body>
     <main class="container-class">
       <header class="header">
-      <a href="/index.html"><img class="logo-top" src="images/logolm.png"></a>
+      <a href="/index.html"><img class="logo-top" src="images/logonav.png"></a>
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
       <ul class="menu">
@@ -59,18 +56,16 @@ $(document).ready(function(){
         <li><a href="/contact.html">Contact</a></li>
       </ul>
       </header>
-      <div class="maintitle">
-    <h1>In The Cloud</h1></div>
 
         <section class="content-box">
-          <hr>
           <div class="arrow blackarrow">
           <a href="#section2" class="fas fa-arrow-down fa-2x blackarrow"></a>
           </div>
 
             <img src="images/cloudheader.png" class="center" width="100%">
-<br>
-            <h2>A cloud based storage application that gives users more of what they want and less of what they don't.</h2>
+            <div class="maintitle">
+          <h4>In The Cloud</h4>
+            <h2>A cloud based storage application that gives users more of what they want and less of what they don't.</h2></div>
           <div class="prototype-links">
               <a href="https://www.figma.com/proto/aUtBPlHHuNLyp5ED2JY42wUx/Cloud-Storage-wireframing-Prototype?node-id=12%3A290&viewport=220%2C278%2C0.03125&scaling=scale-down" target="_blank" title="View Desktop"><span class="link-small link-hoover">View Desktop Prototype</span></a>
               <a href="https://www.figma.com/proto/QMomZTY2q1bLFtLvU6lCLqED/Cloud-Mobile-Prototype?node-id=9%3A0&viewport=475%2C374%2C0.03125&scaling=min-zoom" target="_blank" title="View Mobile"><span class="link-small link-hoover">View Mobile Prototype</span></a>
@@ -92,8 +87,8 @@ $(document).ready(function(){
                 <li>Wireframing & Prototyping</li>
               <li>User Testing & Analysis</li></ul>
             </div>
-            <div class="split-background">
-        <div class="split-1"><h5>Problem</h5>
+            <div class="grid">
+        <div class="grid-1"><h5>Problem</h5>
             <p class="text">What was the problem?  Better yet, why was this prompt created in
               the first place?  As the role of the designer and developer,
               I had to figure out what other competitors had within their sites
@@ -103,7 +98,7 @@ $(document).ready(function(){
               larger storage plans that incorporated more affordable prices.</p>
           </div>
 
-         <div class="split-2">
+         <div class="grid-1">
               <h5>Solution</h5>
               <p class="text">Entering into the market of cloud storage, I wanted to build an
                 application that gave users the freedom and ease of managing their
@@ -114,7 +109,8 @@ $(document).ready(function(){
                 being put on consumers for adequate amount of storage needed and desired.</p>
             </div></div>
 
-          <div class="content-shadow">
+            <div class="grid">
+        <div class="grid-1">
             <h5>Process</h5>
             <p class="text-box">Why is user experience so important?  In simple terms, the users
               experience needs to be of utmost importance when designing a brand.
@@ -132,10 +128,12 @@ $(document).ready(function(){
               <p class="text-box">
                 Before moving onto developing a survey to gather information about what users want, I did a competitve analysis
                 on three different storage websites; Dropbox, Pinterest, and Google Drive.  Looking at these websites, I was able to
-               formulate the questions that needed to be asked in order to gather the information from users. </p>
-                <img src="images/competitiveanalysis.png" width="100%">
+               formulate the questions that needed to be asked in order to gather the information from users. </p></div>
+                <div class="grid-1"><img src="images/competitiveanalysis1.png" width="90%"><img src="images/competitiveanalysis2.png"width="90%"><img src="images/competitiveanalysis3.png"width="90%">
+                </div>
           </div>
-          <div class="content-shadow">
+          <div class="grid">
+      <div class="grid-1">
             <h5>User Surveys</h5>
               <p class="text-box">Why is user experience so important?  In simple terms,
                 the users experience needs to be of utmost importance when designing a brand.
@@ -144,70 +142,91 @@ $(document).ready(function(){
                 Lacking in understanding when it comes to who the target user
                 creates a volatile relationship with both the brand as well as the consumers.
                 So, what exactly do users really want?</p>
-                <img src="images/surveyframeresults.png" width="65%">
-              </div>
+              <br>  <img src="images/survey2.png" ></div>
+                <div class="grid-survey">
+                <img src="images/survey.png" >
 
+              </div>
+            </div>
           <div class="content-shadow">
             <h5>User Personas</h5>
             <p class="text-box">Once the surveys were completed and the results had been gathered,
               the next step was to develop user personas.  The two personas
               were created based on the audience that is expected to be using
-              this platform.</p>
-              <div class="wrapper-grid-persona">
-                  <ul class="box">
+              this platform.</p></div>
+                <div class="persona-grid">
+                  <div class="persona1">
                     <img src="images/garrett.png" width="100%">
-                    <p>
-                    <p class="italic">“Empowering your team means including them in
-                    the conversation and allowing the changes to be made.”</p>
-                    <p class="text-bold">Garrett</p>
-                  <p>Role: Assistant Manager</p>
-                  <p class="text-bold">Goals</p>
-                  <li>Accessing files anywhere</li>
-                  <li>Connecting with others for collaboration</li>
-                  <li>Organizing files into folders and categories</li>
-                  <p class="text-bold">Frustrations</p>
-                  <li>Pricing</li>
-                  <li>Not downloadable through a mobile app</li>
-                  <li>Files being deleted without doing so due to storage capacity</li>
-                <a href="https://drive.google.com/file/d/1PTpA3N0x8xsfNn9CfrtKoCe184fNA2-i/view?usp=sharing" target="_blank"><span class="link-small link-hoover">View Persona</span></a></ul>
-
-                  <ul class="box">
+                    <h2>Garrett</h2>
+                    </div>
+                  <div class="persona1">
+                  <h1>Role: Assistant Manager</h1>
+                    <h1>Location: San Francisco, CA</h1>
+                    <h1>Gender: Male</h1>
+                    <h1>Tech Level: Casual</h1>
+                  </div>
+                  <div class="persona1">
+                    <ul class="box">
+                    <h2>Goals</h2>
+                    <li>Accessing files anywhere</li>
+                    <li>Connecting with others for collaboration</li>
+                    <li>Organizing files into folders and categories</li></ul>
+                  </div>
+                  <div class="persona1">
+                    <ul class="box">
+                    <h2>Frustrations</h2>
+                    <li>Pricing</li>
+                    <li>Not downloadable through a mobile app</li>
+                    <li>Files being deleted without doing so due to storage capacity</li></ul>
+                  </div>
+                </div>
+                <div class="persona-grid">
+                  <div class="persona1">
                     <img src="images/cassie.png" width="100%">
-                    <p>
-                    <p class="italic">“In order for me to keep my business growing,
-                    I need services that don’t limit my ability to access
-                    my data wherever I am.”</p>
-                    <p class="text-bold">Cassie</p>
-                  <p>Role: Storage Seeker</p>
-                  <p class="text-bold">Goals</p>
-                  <li>Applications to offer storage with unlimited amount</li>
-                  <li>Ability to share files between clients</li>
-                  <li>Multi-use abilities with creating and uploading files</li>
-                  <p class="text-bold">Frustrations</p>
-                  <li>Delay in uploading files</li>
-                  <li>Lack of options</li>
-                  <li>Inability to add users to projects</li>
-                <a href="https://drive.google.com/file/d/1koT5mCWRi_Ubl__rIMNtoLuRyzdMMorr/view?usp=sharing" target="_blank"><span class="link-small link-hoover">View Persona</span></a></ul>
-                </div></div>
-              <div class="content-shadow">
+                    <h2>Cassie</h2>
+                    </div>
+                  <div class="persona1">
+                  <h1>Role: Storage Seeker</h1>
+                    <h1>Location: New York, NY</h1>
+                    <h1>Gender: Female</h1>
+                    <h1>Tech Level: Professional</h1>
+                  </div>
+                  <div class="persona1">
+                    <ul class="box">
+                    <h2>Goals</h2>
+                    <li>Applications to offer storage with unlimited amount</li>
+                    <li>Ability to share files between clients</li>
+                    <li>Multi-use abilities with creating and uploading files</li></ul>
+                  </div>
+                  <div class="persona1">
+                    <ul class="box">
+                    <h2>Frustrations</h2>
+                    <li>Delay in uploading files</li>
+                    <li>Lack of options</li>
+                    <li>Inability to add users to projects</li></ul>
+                  </div>
+                </div>
+                <div class="grid">
+                  <div class="grid-1">
                 <h5>User Stories & Sitemap</h5>
                   <p class="text-box">The user stories and sitemap was developed to distinguish features
                   that will be included into it’s priority and importance.  Once that
                   was sorted, I moved onto the user flows taking that information,
                   focused on the priorities from the list to develop a site map for a
                   better flow when it comes to laying everything out.</p>
-                  <div class="images-box">
+                </div>
+                  <div class="grid-1">
                   <img src="images/userstories.png" >
-                <img src="images/userflow.png" >
+                  <a href="https://docs.google.com/spreadsheets/d/1CGLQIZSEgGgawj5TQxs9uVZfFZmPc-ip9JMQ0cGtt_8/edit?usp=sharing" target="_blank"><span class="link-small link-hoover">View User Stories</span></a>
+                <img src="images/userflow.png">
+                <a href="https://drive.google.com/file/d/1Hsr4JgxXH9ijqbGIxUNKhjk6UtI5UyUc/view?usp=sharing" target="_blank"><span class="link-small link-hoover">View User Flow</span></a>
                 <img src="images/sitemap.png" >
+                <a href="https://drive.google.com/file/d/1i3e56zEHxABfI7z9d1Z7qq40e1Olafg3/view?usp=sharing" target="_blank"><span class="link-small link-hoover">View Sitemap</span></a>
               </div>
-              <a href="https://docs.google.com/spreadsheets/d/1CGLQIZSEgGgawj5TQxs9uVZfFZmPc-ip9JMQ0cGtt_8/edit?usp=sharing" target="_blank"><span class="link-small link-hoover">View User Stories</span></a>
-            <a href="https://drive.google.com/file/d/1Hsr4JgxXH9ijqbGIxUNKhjk6UtI5UyUc/view?usp=sharing" target="_blank"><span class="link-small link-hoover">View User Flow</span></a>
-            <a href="https://drive.google.com/file/d/1i3e56zEHxABfI7z9d1Z7qq40e1Olafg3/view?usp=sharing" target="_blank"><span class="link-small link-hoover">View Sitemap</span></a>
             </div>
-                  <div class="content-shadow">
-
-                    <h5>Wireframing</h5>
+              <div class="grid">
+                <div class="grid-1">
+                  <h5>Wireframing</h5>
                     <p class="text-box">The development of wireframes held an important part of the design
                     process because it allowed myself to analyze the structure and the
                     responsiveness of the design.  It also helped myself adjust interactions
@@ -215,14 +234,16 @@ $(document).ready(function(){
                     displayed here are detailing the basic construction of the placement and
                     layout of elements that are unique to the project.</p>
                     <br>
-                    <div class="image-flex">
-                    <img src="images/cloudsketches.png" width="45%">
-                    <img src="images/wireframe.png" width="45%">
+                      <a href="https://www.figma.com/file/BYSeUfN5HJQe746WiJZWAiT6/CloudStorage-Wireframing?node-id=0%3A1" target="_blank" title="View Wireframes"><span class="link-small link-hoover">View Wireframes</span></a>
                   </div>
-                    <a href="https://www.figma.com/file/BYSeUfN5HJQe746WiJZWAiT6/CloudStorage-Wireframing?node-id=0%3A1" target="_blank" title="View Wireframes"><span class="link-small link-hoover">View Wireframes</span></a>
+                    <div class="grid-1">
+                    <img src="images/cloudsketches.png" width="90%">
+                    <img src="images/wireframe.png" width="90%">
                   </div>
+                </div>
 
-                    <div class="branding-div">
+                    <div class="grid">
+                      <div class="grid-1">
                       <h5>Branding & User Testing</h5>
                       <p class="text-box">During this phase, I collected the designs and research I had
                       previously performed through user testing and established a high-fidelity
@@ -233,27 +254,32 @@ $(document).ready(function(){
                       Once I narrowed down the idea and found a concept I liked, I then
                       moved on to refining it into a monochromatic version that could be
                       adjusted and display using the chosen color scheme.</p>
-                        <img src="images/brandinginthecloud.png" width="100%">
+                    <a href="https://drive.google.com/file/d/1yHofSuhXGwtqfOh-A2QXRtZKVnHT5z8-/view?usp=sharing" target="_blank" title="View Style Guide"><span class="link-small link-hoover">View Style Guide</span></a>
+                  </div>
+                      <div class="grid-1">
+                        <h2>Logo Design</h2>
+                        <img src="images/logos.png" width="100%">
+                      <h2>Typography</h2>
+                        <img src="images/typeface.png" width="100%">
+                          <h2>Color Palette</h2>
+                        <img src="images/colorcloud.png" width="100%">
+                      </div>
                       </div>
 
-                    <div class="content-shadow">
+                    <div class="grid-preference">
+                      <div class="preference">
                       <h5>Preference Testing</h5>
                       <p class="text-box">For the preference testing portion of the mockups,
                       I analyzed three different designs with each have two variations.
                       From the results, I was able to gather which display was more visually
-                      appealing to the users eyes.</p>
-                      <div class="split-3">
-                      <img src="images/preferencetest1.png" width="80%">
-                      <p class="small-text"> Preference test performed for homepage design.</p>
-                      <p>
-                    <img src="images/preferencetest2.png" width="80%">
-                    <p class="small-text"> Preference test performed on link styling.</p></div>
-                    <div class="split-4">
-                  <img src="images/preferencemobile.png" width="80%">
-                  <p class="small-text"> Preference test for mobile.</p>
-                </div></div>
+                      appealing to the users eyes.</p></div>
+                      <div class="preference">
+                      <img src="images/desktoppreference1.png"width="60%" >  <img src="images/desktoppreference2.png"width="60%">
+                        <img src="images/mobilepreference.png"width="60%">
+                      </div></div>
 
-                    <div class="content-shadow">
+                      <div class="grid">
+                        <div class="grid-1">
                       <h5>Usability Testing</h5>
                       <p class="text-box">For the usability testing,  the tests that were excuted were meant
                       to gather results from different tiers of experience levels that
@@ -264,9 +290,11 @@ $(document).ready(function(){
                       IOS - Signing up for an account<br>
                       IOS - Creating a folder<br>
                       Desktop- Uploading a file</p>
-                      <img src="images/desktopusability.png" >
-                    <img src="images/mobileusability.png" >
                     </div>
+                    <div class="grid-1">
+                      <img src="images/usabilitydesktop.png" width="100%" >
+                    <img src="images/usabilitymobile.png" width="100%">
+                  </div></div>
 
                     <div class="content-shadow">
                     <h5>The Conclusion</h5>
@@ -282,8 +310,8 @@ $(document).ready(function(){
                     </div>
 
                     <footer class="bottom-footer">
-              <hr>
-                        <h2>Let's Connect</h2>
+
+                        <h5>Let's Connect</h5>
                       <div class="bottom-footer-links">
                         <a href="https://laurenmcelaney.github.io" target="_blank"><img src="images/github.png"></a>
                         <a href="https://www.linkedin.com/in/lauren-mcelaney-b3b33561" target="_blank"><img src="images/linkedin.png"></a>
