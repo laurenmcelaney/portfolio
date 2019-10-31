@@ -816,11 +816,10 @@ ul.box li {
   background-size:contain;
   height: 300px;
   width: 100%;
-  margin-top: 100px;
 }
 @media(max-width: 768px) and (max-width: 1024px) {
   .about-image {
-    margin-top: 80px;
+    margin-top: 0px;
   }
 }
 
