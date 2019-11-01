@@ -6,7 +6,7 @@
 
 body {
   background-color: #fff;
-  background-image: url("file:///Users/laurenmcelaney/Desktop/Website/images/backgroundweb.png");
+  background-image: url("/images/backgroundweb.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size:contain;
@@ -451,7 +451,7 @@ hr {
     text-align: center;
 }
 .skills-item1{
-   background-image: url(".../images/skills1.png");
+   background-image: url("/images/skills1.png");
    background-repeat: no-repeat;
   background-size: auto;
    padding: 10px;
@@ -461,7 +461,7 @@ hr {
    position: relative;
  }
  .skills-item2{
-    background-image: url(".../images/skills2.png");
+    background-image: url("/images/skills2.png");
     background-repeat: no-repeat;
    background-size: auto;
     padding: 10px;
@@ -471,7 +471,7 @@ hr {
     position: relative;
   }
  .skills-item3{
-   background-image: url(".../images/skills3.png");
+   background-image: url("/images/skills3.png");
    background-repeat: no-repeat;
   background-size: auto;
     padding: 10px;
