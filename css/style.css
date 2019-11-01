@@ -26,6 +26,12 @@ img {
   width: 40%;
 }
 
+@media (max-width:1024px) {
+  .container {
+   width: 100%;
+   padding: 20px;
+  }
+}
 .image {
   opacity: 1;
   display: block;
@@ -33,6 +39,11 @@ img {
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
+}
+@media (max-width:1024px) {
+  .image {
+  padding: 10px;
+  }
 }
 
 .middle {
@@ -45,6 +56,12 @@ img {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
+@media (max-width:1024px) {
+  .middle, .text {
+    display: contents;
+      position: relative;
+  }
+}
 
 .container:hover .image {
   opacity: 0.3;
@@ -53,6 +70,7 @@ img {
 .container:hover .middle {
   opacity: 1;
 }
+
 
 .text {
   background-color: transparent;
@@ -314,6 +332,7 @@ hr {
     width:100%;
     float: left;
     text-align: center;
+    padding: 20px;
   }
 }
 
@@ -450,6 +469,16 @@ hr {
     padding: 5px;
     text-align: center;
 }
+@media(max-width: 768px) {
+    .skills-container {
+      float: left;
+      grid-template-columns: 100%;
+      padding: 0px 50px 0px 50px;
+      text-align: center;
+      width: 100%;
+      margin: 10px 0 0 0;
+    }
+  }
 .skills-item1{
    background-image: url("/images/skills1.png");
    background-repeat: no-repeat;
@@ -480,6 +509,14 @@ hr {
     line-height: 24px;
     position: relative;
   }
+  @media(max-width: 768px) {
+      .skills-item1, .skills-item2, .skills-item3 {
+    float: left;
+    padding: 30px;
+    grid-row-gap: 10px;
+    margin: 10px 0 0 0;
+      }
+    }
 
 .aboutme-front{
   display:inline-block;
@@ -654,6 +691,12 @@ p.small-text{
   color: #000;
   font-size:12px;
 }
+@media(max-width: 768px) and (max-width: 1024px) {
+  p.small-text {
+    font-size: 12px;
+    text-align: center;
+  }
+}
 p.italic{
   font-style: italic;
   font-size:14px;
@@ -685,8 +728,8 @@ p.text {
 }
 @media(max-width: 768px) and (max-width: 1024px) {
   p.text {
-    font-size: 12px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 26px;
     text-align: left;
   }
 }
@@ -1183,4 +1226,3 @@ img.center {
 #section2{
   display:block;
 }
-
