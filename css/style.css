@@ -589,11 +589,29 @@ hr {
   }
 /*** contact ***/
 .form{
-  width: 200px;
+  width: 400px;
   display: inline-block;
   padding: 20px;
   font-family: montserrat;
 }
+.button, input, optgroup, select, textarea{
+  font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 1.15;
+    margin: 5px;
+    padding: 10px;
+    width: 300px;
+    height: 40px;
+}
+
+.button, [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+    background-color: black;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    padding: 20px;
+  }
+  
 .contact-form{
   width: 100%;
   background-color: white;
