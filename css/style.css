@@ -679,14 +679,14 @@ p.text {
   font-size: 14px;
   line-height: 23px;
   text-align: justify;
-  max-width: 78ch;
+  max-width: 64ch;
   padding-top: 40px;
 
 }
 @media(max-width: 768px) and (max-width: 1024px) {
   p.text {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 12px;
+    line-height: 22px;
     text-align: left;
   }
 }
