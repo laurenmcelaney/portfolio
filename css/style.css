@@ -20,6 +20,40 @@ img {
 
 }
 
+
+.scroll-animations {
+  display: flex;
+}
+
+.scroll-animations div {
+  flex-grow: 1;
+  padding: 30px;
+  text-align: center;
+  opacity: 0;
+  color: #333;
+}
+
+.scroll-animations div span {
+  font-size: 4em;
+  color: #5AA9E0;
+}
+
+.scroll-animations div h3 {
+  font-size: 1.9em;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+/* Media queries */
+@media (max-width: 759px) {
+.scroll-animations {
+    display: block;
+  }
+
+  .scroll-animations div {
+    padding: 20px 80px;
+  }
+}
 .container {
   position: relative;
   display: inline-block;
@@ -166,6 +200,7 @@ img {
 
 .header .menu-btn:checked ~ .menu {
   max-height: 240px;
+  background-color: white;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -207,10 +242,8 @@ img {
 }
 
 #navbar {
-  overflow: hidden;
   background-color: white;
-  background-image: linear-gradient(to left, #6E4D5A, #88808F, #DDD5DA); /* Standard syntax (must be last) */
-  top:0;
+  top: 0;
 }
 
 
@@ -613,7 +646,7 @@ hr {
     color: white;
     padding: 20px;
   }
-  
+
 .contact-form{
   width: 100%;
   text-align: center;
@@ -798,6 +831,13 @@ p.text-bold {
   text-align: center;
   text-decoration-line: underline;
 }
+@media(max-width: 768px) and (max-width: 1024px) {
+  p.text-bold {
+    font-size: 26px;
+    line-height: 26px;
+    text-align: center;
+  }
+}
 
 p.text-footer {
   color: #000;
@@ -868,10 +908,10 @@ ul.box li {
 @media(max-width: 768px) {
     .persona-grid {
       float: left;
-      grid-template-columns: 100%;
-      width: 100%;
-      padding: 5px;
-      margin: 10px 0 0 0;
+    grid-template-columns: 100%;
+    width: 80%;
+    padding: 5px;
+    margin: 30px;
     }
   }
 .persona1{
@@ -883,6 +923,7 @@ ul.box li {
   text-align: center;
 
 }
+
 /*** about page ***/
 
 .about-image{
@@ -1121,11 +1162,20 @@ img.center {
   position: relative;
 }
 @media(max-width: 768px){
+  .grid-1{
+    padding: 5px;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 24px;
+    position: relative;
+  }
+}
+@media(max-width: 768px){
   .grid{
     float: left;
     grid-template-columns: 100%;
     width: 100%;
-    padding: 5px;
+        padding: 25px;
     margin: 10px 0 0 0;
   }
 }
@@ -1136,114 +1186,7 @@ img.center {
   line-height: 24px;
   position: relative;
 }
-.split-1{
-      display: inline-block;
-      float: left;
-      width: 50%;
-      padding: 0 15px 0 15px;
 
-}
-@media(max-width: 768px) and (max-width: 1024px) {
-  .split-1 {
-    float:left;
-    width:100%;
-    padding: 5px;
-    margin: 0;
-  }
-}
-.split-2{
-    display: inline-block;
-    float: right;
-    width: 50%;
-    padding: 0 15px 0 15px;
-}
-@media(max-width: 768px) and (max-width: 1024px) {
-  .split-2 {
-    float:left;
-    width:100%;
-    padding: 5px;
-    margin: 0;
-  }
-}
-
-.split-3{
-  display: inline-block;
-  float: left;
-  width:50%;
-  padding: 20px;
-  text-align: center;
-}
-@media(max-width: 768px) and (max-width: 1024px) {
-  .split-3 {
-    float:left;
-    width:100%;
-    padding: 0;
-    margin: 0;
-  }
-}
-
-.split-4{
-  display: inline-block;
-  float: right;
-  width:50%;
-  padding: 20px;
-}
-@media(max-width: 768px) and (max-width: 1024px) {
-  .split-4 {
-    float:left;
-    width:100%;
-    padding: 0;
-    margin: 0;
-  }
-}
-
-.split-5{
-  display: inline-block;
-  float: left;
-  background-color: white;
-  width:50%;
-  padding: 10px;
-  margin-top: 15px;
-}
-@media(max-width: 768px) and (max-width: 1024px) {
-  .split-5 {
-    float:left;
-    width:100%;
-    padding: 0;
-    margin: 0;
-  }
-}
-.split-6{
-  display: inline-block;
-  float: right;
-  background-color: white;
-  width:50%;
-  padding: 10px;
-}
-@media(max-width: 768px) and (max-width: 1024px) {
-  .split-6 {
-    float:left;
-    width:100%;
-    padding: 0;
-    margin: 0;
-  }
-}
-.split-background{
-  background-color: #FFFFFF;
-  width: 100%;
-  height: auto;
-  padding: 10px;
-  display: inline-block;
-}
-@media(max-width: 768px) and (max-width: 1024px) {
-  .split-background {
-    float:left;
-    width:100%;
-    background-color: #ffffff;
-    padding: 10px;
-    margin: 0;
-  }
-}
 #section2{
   display:block;
 }
