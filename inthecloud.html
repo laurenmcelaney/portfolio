@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Rozha+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/7ba9ab4ea5.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -46,11 +47,11 @@ $(document).ready(function(){
   </head>
   <body>
     <main class="container-class">
-      <header class="header">
+      <header class="header" id="navbar">
       <a href="/index.html"><img class="logo-top" src="images/logonav.png"></a>
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-      <ul class="menu">
+      <ul class="menu" >
         <li><a href="http://laurenmcelaney.design">Work</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/contact.html">Contact</a></li>
@@ -70,6 +71,7 @@ $(document).ready(function(){
               <a href="https://www.figma.com/proto/aUtBPlHHuNLyp5ED2JY42wUx/Cloud-Storage-wireframing-Prototype?node-id=12%3A290&viewport=220%2C278%2C0.03125&scaling=scale-down" target="_blank" title="View Desktop"><span class="link-small link-hoover">View Desktop Prototype</span></a>
               <a href="https://www.figma.com/proto/QMomZTY2q1bLFtLvU6lCLqED/Cloud-Mobile-Prototype?node-id=9%3A0&viewport=475%2C374%2C0.03125&scaling=min-zoom" target="_blank" title="View Mobile"><span class="link-small link-hoover">View Mobile Prototype</span></a>
           </div>
+
           <div class="rolls-divider" id="section2">
               <ul class="rolls"><i class="fas fa-pencil-ruler fa-6x"></i><p class="text-bold">Role:</p>
                 <li>UI/UX</li>
@@ -98,7 +100,6 @@ $(document).ready(function(){
               sharing files in the platform to others users and non-users, and
               larger storage plans that incorporated more affordable prices.</p>
           </div>
-
          <div class="grid-1">
               <h5>Solution</h5></div>
                 <div class="grid-1">
@@ -132,8 +133,8 @@ $(document).ready(function(){
                 Before moving onto developing a survey to gather information about what users want, I did a competitve analysis
                 on three different storage websites; Dropbox, Pinterest, and Google Drive.  Looking at these websites, I was able to
                formulate the questions that needed to be asked in order to gather the information from users. </p>
-  <img src="images/competitiveanalysis1.png" width="100%"><img src="images/competitiveanalysis2.png"width="100%"><img src="images/competitiveanalysis3.png"width="100%">
             </div></div>
+            <img src="images/userresearchcloud.png">
           <div class="grid">
       <div class="grid-1">
             <h5>User Surveys</h5></div>
@@ -145,10 +146,9 @@ $(document).ready(function(){
                 Lacking in understanding when it comes to who the target user
                 creates a volatile relationship with both the brand as well as the consumers.
                 So, what exactly do users really want?</p>
-              <p>
-                <img src="images/surveyimg.png">
+                <p>
               </div></div>
-
+                <img src="images/surveyimg.png"  >
 
               <div class="grid">
           <div class="grid-1">
@@ -215,11 +215,11 @@ $(document).ready(function(){
                   was sorted, I moved onto the user flows taking that information,
                   focused on the priorities from the list to develop a site map for a
                   better flow when it comes to laying everything out.</p>
-                  <img src="images/user.png" width="100%">
-                  <a href="https://drive.google.com/file/d/1Hsr4JgxXH9ijqbGIxUNKhjk6UtI5UyUc/view?usp=sharing" target="_blank"><span class="link-small link-hoover">View User Flow</span></a>
-                  <a href="https://docs.google.com/spreadsheets/d/1CGLQIZSEgGgawj5TQxs9uVZfFZmPc-ip9JMQ0cGtt_8/edit?usp=sharing" target="_blank"><span class="link-small link-hoover">View User Stories</span></a>
-                  <a href="https://drive.google.com/file/d/1i3e56zEHxABfI7z9d1Z7qq40e1Olafg3/view?usp=sharing" target="_blank"><span class="link-small link-hoover">View Sitemap</span></a>
               </div></div>
+              <img src="images/user.png" ><p>
+              <a href="https://drive.google.com/file/d/1Hsr4JgxXH9ijqbGIxUNKhjk6UtI5UyUc/view?usp=sharing" target="_blank"><span class="link-small link-hoover">View User Flow</span></a>
+              <a href="https://docs.google.com/spreadsheets/d/1CGLQIZSEgGgawj5TQxs9uVZfFZmPc-ip9JMQ0cGtt_8/edit?usp=sharing" target="_blank"><span class="link-small link-hoover">View User Stories</span></a>
+              <a href="https://drive.google.com/file/d/1i3e56zEHxABfI7z9d1Z7qq40e1Olafg3/view?usp=sharing" target="_blank"><span class="link-small link-hoover">View Sitemap</span></a>
 
 
               <div class="grid">
@@ -233,11 +233,11 @@ $(document).ready(function(){
                     displayed here are detailing the basic construction of the placement and
                     layout of elements that are unique to the project.</p>
                     <br>
-                      <a href="https://www.figma.com/file/BYSeUfN5HJQe746WiJZWAiT6/CloudStorage-Wireframing?node-id=0%3A1" target="_blank" title="View Wireframes"><span class="link-small link-hoover">View Wireframes</span></a>
                   </div>
                 </div>
                 <img src="images/cloudsketches.png" width="40%">
                 <img src="images/wireframe.png" width="40%">
+                <p><a href="https://www.figma.com/file/BYSeUfN5HJQe746WiJZWAiT6/CloudStorage-Wireframing?node-id=0%3A1" target="_blank" title="View Wireframes"><span class="link-small link-hoover">View Wireframes</span></a>
 
                     <div class="grid">
                       <div class="grid-1">
@@ -252,16 +252,15 @@ $(document).ready(function(){
                       Once I narrowed down the idea and found a concept I liked, I then
                       moved on to refining it into a monochromatic version that could be
                       adjusted and display using the chosen color scheme.</p>
-                        <h2>Logo Design</h2>
-                        <img src="images/logos.png" width="100%">
+                      </div>
+                      </div>
+                      <h2>Logo Design</h2>
+                      <img src="images/logos.png" >
                       <h2>Typography</h2>
-                        <img src="images/typeface.png" width="100%">
-                          <h2>Color Palette</h2>
-                        <img src="images/colorcloud.png" width="100%">
-                          <a href="https://drive.google.com/file/d/1yHofSuhXGwtqfOh-A2QXRtZKVnHT5z8-/view?usp=sharing" target="_blank" title="View Style Guide"><span class="link-small link-hoover">View Style Guide</span></a>
-                      </div>
-                      </div>
-
+                      <img src="images/typeface.png" width="70%">
+                        <h2>Color Palette</h2>
+                      <img src="images/colorcloud.png" width="70%" >
+                      <p><a href="https://drive.google.com/file/d/1yHofSuhXGwtqfOh-A2QXRtZKVnHT5z8-/view?usp=sharing" target="_blank" title="View Style Guide"><span class="link-small link-hoover">View Style Guide</span></a>
                       <div class="grid">
                         <div class="grid-1">
                       <h5>Preference Testing</h5></div>
@@ -270,9 +269,10 @@ $(document).ready(function(){
                       I analyzed three different designs with each have two variations.
                       From the results, I was able to gather which display was more visually
                       appealing to the users eyes.</p>
-                      <img src="images/desktoppreference1.png"width="70%" >  <img src="images/desktoppreference2.png"width="70%">
-                        <img src="images/mobilepreference.png"width="50%">
+
                       </div></div>
+                      <img src="images/desktoppreference1.png" >  <img src="images/desktoppreference2.png">
+                        <img src="images/mobilepreference.png">
 
 
                       <div class="grid">
@@ -283,14 +283,17 @@ $(document).ready(function(){
                       to gather results from different tiers of experience levels that
                       could perform specific tasks.  Having a broad range of expert levels
                       provided me with valuable insight into changes and adjustments that
-                      needed to be made for better user usability.</p><br>
+                      needed to be made for better user usability.</p>
                       <p>The usability testing performed on our mockups were as follows:<br>
-                      IOS - Signing up for an account<br>
-                      IOS - Creating a folder<br>
-                      Desktop- Uploading a file</p>
-                      <img src="images/usabilitydesktop.png" width="100%" >
-                    <img src="images/usabilitymobile.png" width="100%">
+                        <ul class="bullet-box">
+                        <li>IOS - Signing up for an account</li>
+                        <li>IOS - Creating a folder</li>
+                        <li>Desktop- Uploading a file</li>
+                      </ul>
+
                   </div></div>
+                  <img src="images/usabilitydesktop.png" width="80%" >
+                <img src="images/usabilitymobile.png" width="80%">
 
                   <div class="grid">
                     <div class="grid-1">
@@ -312,8 +315,8 @@ $(document).ready(function(){
                         <h5>Let's Connect</h5>
                       <div class="bottom-footer-links">
                         <a href="https://laurenmcelaney.github.io" target="_blank"><img src="images/github.png"></a>
-                        <a href="https://www.linkedin.com/in/laurenmcelaney/" target="_blank"><img src="images/linkedin.png"></a>
-                        <a href="https://instagram.com/lololaurenlo" target="_blank"><img src="images/instagram.png"></a>
+                        <a href="https://www.linkedin.com/in/lauren-mcelaney-b3b33561" target="_blank"><img src="images/linkedin.png"></a>
+                        <a href="https://instagram.com/laurenmcelaney" target="_blank"><img src="images/instagram.png"></a>
                         <a href="https://twitter.com/laurenmcelaney" target="_blank"><img src="images/twitter.png"></a>
                         <a href="mailto:mcelaneyl@gmail.com"><img src="images/mail.png"></a>
                       </div>
@@ -331,6 +334,29 @@ $(document).ready(function(){
                   }
                   </script>
                 </main>
+                <script>// Scroll function courtesy of Scott Dowding; http://stackoverflow.com/questions/487073/check-if-element-is-visible-after-scrolling
+
+                $(document).ready(function() {
+                  // Check if element is scrolled into view
+                  function isScrolledIntoView(elem) {
+                    var docViewTop = $(window).scrollTop();
+                    var docViewBottom = docViewTop + $(window).height();
+
+                    var elemTop = $(elem).offset().top;
+                    var elemBottom = elemTop + $(elem).height();
+
+                    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+                  }
+                  // If element is scrolled into view, fade it in
+                  $(window).scroll(function() {
+                    $('.scroll-animations .animated').each(function() {
+                      if (isScrolledIntoView(this) === true) {
+                        $(this).addClass('fadeInLeft');
+                      }
+                    });
+                  });
+                });
+                </script>
               <script>
 
         // When the user scrolls the page, execute myFunction
@@ -349,4 +375,3 @@ $(document).ready(function(){
    </script>
   </body>
 </html>
-
