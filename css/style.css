@@ -373,6 +373,23 @@ hr {
   }
 }
 
+.indextitle {
+  display: inline-block;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 40px;
+    width: 100%;
+
+}
+@media(max-width: 768px) and (max-width: 1024px) {
+  .indextitle {
+    width:100%;
+    float: left;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
 .main-link {
   line-height: 2;
   font-weight: 700;
@@ -549,10 +566,6 @@ hr {
 .aboutme-front{
   display:inline-block;
   text-align: center;
-  font-size: 16px;
-  max-width: 48ch;
-  font-family: 'Raleway', sans-serif;
-  line-height: 28px;
 }
 .arrow {
   text-align: center;
@@ -775,6 +788,23 @@ p.text {
 }
 @media(max-width: 768px) and (max-width: 1024px) {
   p.text {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+  }
+}
+p.front {
+  color: #383838;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    line-height: 26px;
+    margin-right: 8px;
+    max-width: 64ch;
+
+}
+@media(max-width: 768px) and (max-width: 1024px) {
+  p.front {
     font-size: 16px;
     line-height: 26px;
     text-align: left;
