@@ -19,6 +19,12 @@ img {
   max-width:100%;
 
 }
+@media (max-width:1024px) {
+  img {
+  padding: 10px;
+  max-width:100%;
+  }
+}
 
 
 .scroll-animations {
