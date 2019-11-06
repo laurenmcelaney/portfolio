@@ -387,7 +387,7 @@ color: #bbbbbb;
     width:100%;
     float: left;
     text-align: center;
-    padding: 20px;
+    padding: 60px;
   }
 }
 
@@ -850,7 +850,7 @@ p.front {
   p.front {
     font-size: 16px;
     line-height: 26px;
-    text-align: left;
+    text-align: center;
   }
 }
 
