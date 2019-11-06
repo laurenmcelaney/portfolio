@@ -322,13 +322,14 @@ img {
 
 hr {
   display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  width:100%;
-  border-width: 1px;
+margin-top: 4em;
+margin-bottom: 0.5em;
+margin-left: auto;
+margin-right: auto;
+border-style: solid;
+width: 850px;
+border-width: .5px;
+color: #bbbbbb;
 }
 
 @media(max-width: 768px) and (max-width: 1024px) {
@@ -562,6 +563,38 @@ hr {
     margin: 10px 0 0 0;
       }
     }
+.about-container{
+      display: inline-grid;
+        grid-template-columns: 100%;
+        padding: 5px;
+        text-align: center;
+}
+ @media(max-width: 768px) {
+        .about-container {
+          float: left;
+          grid-template-columns: 100%;
+          padding: 0px 50px 0px 50px;
+          text-align: center;
+          width: 100%;
+          margin: 10px 0 0 0;
+        }
+      }
+.about-item1{
+       padding: 10px;
+       font-size: 14px;
+       font-family: 'Raleway', sans-serif;
+       line-height: 24px;
+       max-width: 68ch;
+       position: relative;
+}
+  @media(max-width: 768px) {
+          .about-item1 {
+        float: left;
+        padding: 30px;
+        grid-row-gap: 10px;
+        margin: 10px 0 0 0;
+    }
+  }
 
 .aboutme-front{
   display:inline-block;
@@ -659,6 +692,16 @@ hr {
   text-align: center;
   display: inline-block;
 }
+
+/*** resume ***/
+.resume-box{
+  display: inline-block;
+  text-align: center;
+  background: white;
+  padding: 10px;
+  margin: 100px 0 25px 0;
+}
+
 /*** typography ***/
 h1 {
   color: #000;
