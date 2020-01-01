@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
     <title>Lauren McElaney</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|PT+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rozha+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Cinzel|Dr+Sugiyama&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:400,600|Roboto+Slab:200,300,400|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -46,23 +48,23 @@ $(document).ready(function(){
   </head>
   <body>
     <main class="container-class">
+      <video id="videoBG" poster="stars.png" autoplay muted loop>
+    <source src="images/stars.mp4" type="video/mp4">
+</video>
       <header class="header">
-      <a href="/index.html"><img class="logo-top" src="images/logonav.png"></a>
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
       <ul class="menu">
         <li><a href="http://laurenmcelaney.design">Work</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/contact.html">Contact</a></li>
       </ul>
+      <h3>LM</h3>
+
       </header>
-     <div class="indextitle">
-        <img class="logo" src="images/logonew.png">
-      </div>
 
         <section class="content-box">
-
-
       <div class="about-image"></div>
         <div class="about-box">
           <h4>The Designer</h4>
@@ -76,7 +78,7 @@ $(document).ready(function(){
               I taught myself the ins and outs of adobe photoshop, php code, and the process that one must
               take to build a website from the ground up.  My creative interests grew and web design
               fostered an outlet in which I was able to develop designs and projects that I was proud of.
-            </p><p class="text">
+            <br>
               Design gave me a voice when I didn’t have one. It fuels my desire to create future projects
               and give voice to those who were like my 13-year-old self.
               Web development and design is constantly changing, but one thing that will never stop is my
@@ -86,43 +88,53 @@ $(document).ready(function(){
             <br><a href="/resume.html"><span class="link-small link-hoover">View Resume</span></a>
           </div>
 
-          <hr>
           <footer class="bottom-footer">
 
-              <h5>Let's Connect</h5>
+              <h5>L E T ' S - C O N N E C T</h5>
+
+              <div class="contact-form">
+                <div class="form">
+                <form method="POST" action="https://formspree.io/mcelaneyl@gmail.com">
+                  <input type="name" name="name" placeholder="Your name">
+                  <input type="email" name="email" placeholder="Your email">
+                  <textarea name="message" placeholder="Message"></textarea>
+                  <button type="submit">Send Email</button>
+                </form></div>
+                </div>
             <div class="bottom-footer-links">
               <a href="https://github.com/laurenmcelaney" target="_blank"><img src="images/github.png"></a>
-              <a href="https://www.linkedin.com/in/laurenmcelaney/" target="_blank"><img src="images/linkedin.png"></a>
-              <a href="https://instagram.com/lololaurenlo" target="_blank"><img src="images/instagram.png"></a>
+              <a href="https://www.linkedin.com/in/laurenmcelaney" target="_blank"><img src="images/linkedin.png"></a>
+              <a href="https://instagram.com/laurenmcelaney" target="_blank"><img src="images/instagram.png"></a>
               <a href="https://twitter.com/laurenmcelaney" target="_blank"><img src="images/twitter.png"></a>
               <a href="mailto:mcelaneyl@gmail.com"><img src="images/mail.png"></a>
             </div>
             <p class="text-footer">copyright 2019 designed and developed by Lauren McElaney</p>
           </footer>
-        </section>
-        <script>
-        function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "menu") {
+
+          </section>
+          <script>
+          function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "menu") {
           x.className += " responsive";
-        } else {
+          } else {
           x.className = "menu";
-        }
-        }
-        </script>
-      </main>
-    <script>
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
-var header = document.getElementById("navbar");
-var sticky = header.offsetTop;
-function myFunction() {
-if (window.pageYOffset > sticky) {
-  header.classList.add("sticky");
-} else {
-  header.classList.remove("sticky");
-}
-}
-</script>
-</body>
-</html>
+          }
+          }
+          </script>
+          </main>
+          <script>
+          // When the user scrolls the page, execute myFunction
+          window.onscroll = function() {myFunction()};
+          var header = document.getElementById("navbar");
+          var sticky = header.offsetTop;
+          function myFunction() {
+          if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+          } else {
+          header.classList.remove("sticky");
+          }
+          }
+          </script>
+          </body>
+          </html>
