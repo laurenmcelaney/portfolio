@@ -520,25 +520,6 @@ img {
 }
 
 
-
-hr {
-  display: block;
-margin-top: 4em;
-margin-bottom: 0.5em;
-margin-left: auto;
-margin-right: auto;
-border-style: solid;
-width: 900px;
-border-width: .5px;
-color: #bbbbbb;
-}
-
-@media(max-width: 768px) and (max-width: 1024px) {
-    hr{
-    float: left;
-    width: 100%;
-  }
-}
 .container-class {
   position: relative;
   display: block;
@@ -1291,7 +1272,7 @@ ul.box li {
 /*** about page ***/
 
 .about-image{
-  background-image: url("images/aboutimage.png");
+  background-image: url("/images/aboutimage.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size:contain;
