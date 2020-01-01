@@ -7,9 +7,10 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rozha+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Cinzel|Dr+Sugiyama&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:400,600|Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/7ba9ab4ea5.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -47,15 +48,17 @@ $(document).ready(function(){
   </head>
   <body>
     <main class="container-class">
-      <header class="header" id="navbar">
-      <a href="/index.html"><img class="logo-top" src="images/logonav.png"></a>
+      <header class="header">
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-      <ul class="menu" >
+
+      <ul class="menu">
         <li><a href="http://laurenmcelaney.design">Work</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/contact.html">Contact</a></li>
       </ul>
+      <h3>LM</h3>
+
       </header>
 
         <section class="content-box">
@@ -66,7 +69,7 @@ $(document).ready(function(){
             <img src="images/cloudheader.png" class="center" width="100%">
             <div class="maintitle">
           <h4>In The Cloud</h4>
-            <h2>A cloud based storage application that gives users more of what they want and less of what they don't.</h2></div>
+            <p class="small-text">A cloud based storage application that gives users more of what they want and less of what they don't.</p></div>
           <div class="prototype-links">
               <a href="https://www.figma.com/proto/aUtBPlHHuNLyp5ED2JY42wUx/Cloud-Storage-wireframing-Prototype?node-id=12%3A290&viewport=220%2C278%2C0.03125&scaling=scale-down" target="_blank" title="View Desktop"><span class="link-small link-hoover">View Desktop Prototype</span></a>
               <a href="https://www.figma.com/proto/QMomZTY2q1bLFtLvU6lCLqED/Cloud-Mobile-Prototype?node-id=9%3A0&viewport=475%2C374%2C0.03125&scaling=min-zoom" target="_blank" title="View Mobile"><span class="link-small link-hoover">View Mobile Prototype</span></a>
@@ -89,7 +92,7 @@ $(document).ready(function(){
                 <li>Wireframing & Prototyping</li>
               <li>User Testing & Analysis</li></ul>
             </div>
-            <div class="grid">
+            <div class="grid parallax-problem">
         <div class="grid-1"><h5>Problem</h5></div>
             <div class="grid-1">
             <p class="text">What was the problem?  Better yet, why was this prompt created in
@@ -112,7 +115,7 @@ $(document).ready(function(){
                 being put on consumers for adequate amount of storage needed and desired.</p>
             </div></div>
 
-            <div class="grid">
+            <div class="grid parallax-process">
         <div class="grid-1">
             <h5>Process</h5></div>
             <div class="grid-1">
@@ -133,9 +136,11 @@ $(document).ready(function(){
                 Before moving onto developing a survey to gather information about what users want, I did a competitve analysis
                 on three different storage websites; Dropbox, Pinterest, and Google Drive.  Looking at these websites, I was able to
                formulate the questions that needed to be asked in order to gather the information from users. </p>
-            </div></div>
-            <img src="images/userresearchcloud.png">
-          <div class="grid">
+  <img src="images/userresearchcloud.png">
+            </div>
+          </div>
+
+          <div class="grid parallax-survey">
       <div class="grid-1">
             <h5>User Surveys</h5></div>
             <div class="grid-1">
@@ -146,67 +151,68 @@ $(document).ready(function(){
                 Lacking in understanding when it comes to who the target user
                 creates a volatile relationship with both the brand as well as the consumers.
                 So, what exactly do users really want?</p>
-                <p>
-              </div></div>
                 <img src="images/surveyimg.png"  >
+              </div></div>
 
-              <div class="grid">
+
+              <div class="grid parallax-persona">
           <div class="grid-1">
             <h5>User Personas</h5></div>
             <div class="grid-1">
             <p class="text">Once the surveys were completed and the results had been gathered,
               the next step was to develop user personas.  The two personas
               were created based on the audience that is expected to be using
-              this platform.</p></div></div>
-                <div class="persona-grid">
-                  <div class="persona1">
-                      <h2>Garrett</h2>
-                    <img src="images/garrett.png" >
-                  <h1>Role: Assistant Manager</h1>
-                    <h1>Location: San Francisco, CA</h1>
-                    <h1>Gender: Male</h1>
-                    <h1>Tech Level: Casual</h1>
-                  </div>
-                  <div class="persona1">
-                    <ul class="box">
-                    <h2>Goals</h2>
-                    <li>Accessing files anywhere</li>
-                    <li>Connecting with others for collaboration</li>
-                    <li>Organizing files into folders and categories</li></ul>
-                  </div>
-                  <div class="persona1">
-                    <ul class="box">
-                    <h2>Frustrations</h2>
-                    <li>Pricing</li>
-                    <li>Not downloadable through a mobile app</li>
-                    <li>Files being deleted without doing so due to storage capacity</li></ul>
-                  </div>
+              this platform.</p>
+              <div class="persona-grid">
+                <div class="persona1">
+                    <h2>Garrett</h2>
+                  <img src="images/garrett.png" >
+                <h2>Role: Assistant Manager</h2>
+                  <h2>Location: San Francisco, CA</h2>
+                  <h2>Gender: Male</h2>
+                  <h2>Tech Level: Casual</h2>
                 </div>
-                <div class="persona-grid">
-                  <div class="persona1">
-                    <h2>Cassie</h2>
-                    <img src="images/cassie.png">
-                  <h1>Role: Storage Seeker</h1>
-                    <h1>Location: New York, NY</h1>
-                    <h1>Gender: Female</h1>
-                    <h1>Tech Level: Professional</h1>
-                  </div>
-                  <div class="persona1">
-                    <ul class="box">
-                    <h2>Goals</h2>
-                    <li>Applications to offer storage with unlimited amount</li>
-                    <li>Ability to share files between clients</li>
-                    <li>Multi-use abilities with creating and uploading files</li></ul>
-                  </div>
-                  <div class="persona1">
-                    <ul class="box">
-                    <h2>Frustrations</h2>
-                    <li>Delay in uploading files</li>
-                    <li>Lack of options</li>
-                    <li>Inability to add users to projects</li></ul>
-                  </div>
+                <div class="persona1">
+                  <ul class="box">
+                  <h2>Goals</h2>
+                  <li>Accessing files anywhere</li>
+                  <li>Connecting with others for collaboration</li>
+                  <li>Organizing files into folders and categories</li></ul>
                 </div>
-                <div class="grid">
+                <div class="persona1">
+                  <ul class="box">
+                  <h2>Frustrations</h2>
+                  <li>Pricing</li>
+                  <li>Not downloadable through a mobile app</li>
+                  <li>Files being deleted without doing so due to storage capacity</li></ul>
+                </div>
+              </div>
+              <div class="persona-grid">
+                <div class="persona1">
+                  <h2>Cassie</h2>
+                  <img src="images/cassie.png">
+                <h2>Role: Storage Seeker</h2>
+                  <h2>Location: New York, NY</h2>
+                  <h2>Gender: Female</h2>
+                  <h2>Tech Level: Professional</h2>
+                </div>
+                <div class="persona1">
+                  <ul class="box">
+                  <h2>Goals</h2>
+                  <li>Applications to offer storage with unlimited amount</li>
+                  <li>Ability to share files between clients</li>
+                  <li>Multi-use abilities with creating and uploading files</li></ul>
+                </div>
+                <div class="persona1">
+                  <ul class="box">
+                  <h2>Frustrations</h2>
+                  <li>Delay in uploading files</li>
+                  <li>Lack of options</li>
+                  <li>Inability to add users to projects</li></ul>
+                </div>
+              </div></div></div>
+
+                <div class="grid parallax-sitemap">
                   <div class="grid-1">
                 <h5>User Stories & Sitemap</h5></div>
                   <div class="grid-1">
@@ -215,14 +221,15 @@ $(document).ready(function(){
                   was sorted, I moved onto the user flows taking that information,
                   focused on the priorities from the list to develop a site map for a
                   better flow when it comes to laying everything out.</p>
+                  <img src="images/user.png" ><p>
+                  <a href="https://drive.google.com/file/d/1Hsr4JgxXH9ijqbGIxUNKhjk6UtI5UyUc/view?usp=sharing" target="_blank"><span class="link-small link-hoover">View User Flow</span></a>
+                  <a href="https://docs.google.com/spreadsheets/d/1CGLQIZSEgGgawj5TQxs9uVZfFZmPc-ip9JMQ0cGtt_8/edit?usp=sharing" target="_blank"><span class="link-small link-hoover">View User Stories</span></a>
+                  <a href="https://drive.google.com/file/d/1i3e56zEHxABfI7z9d1Z7qq40e1Olafg3/view?usp=sharing" target="_blank"><span class="link-small link-hoover">View Sitemap</span></a>
+
               </div></div>
-              <img src="images/user.png" ><p>
-              <a href="https://drive.google.com/file/d/1Hsr4JgxXH9ijqbGIxUNKhjk6UtI5UyUc/view?usp=sharing" target="_blank"><span class="link-small link-hoover">View User Flow</span></a>
-              <a href="https://docs.google.com/spreadsheets/d/1CGLQIZSEgGgawj5TQxs9uVZfFZmPc-ip9JMQ0cGtt_8/edit?usp=sharing" target="_blank"><span class="link-small link-hoover">View User Stories</span></a>
-              <a href="https://drive.google.com/file/d/1i3e56zEHxABfI7z9d1Z7qq40e1Olafg3/view?usp=sharing" target="_blank"><span class="link-small link-hoover">View Sitemap</span></a>
 
 
-              <div class="grid">
+              <div class="grid parallax-wireframe">
                 <div class="grid-1">
                   <h5>Wireframing</h5></div>
                     <div class="grid-1">
@@ -233,13 +240,13 @@ $(document).ready(function(){
                     displayed here are detailing the basic construction of the placement and
                     layout of elements that are unique to the project.</p>
                     <br>
+                    <img src="images/cloudsketches.png" width="40%">
+                    <img src="images/wireframe.png" width="40%">
+                    <p><a href="https://www.figma.com/file/BYSeUfN5HJQe746WiJZWAiT6/CloudStorage-Wireframing?node-id=0%3A1" target="_blank" title="View Wireframes"><span class="link-small link-hoover">View Wireframes</span></a>
                   </div>
                 </div>
-                <img src="images/cloudsketches.png" width="40%">
-                <img src="images/wireframe.png" width="40%">
-                <p><a href="https://www.figma.com/file/BYSeUfN5HJQe746WiJZWAiT6/CloudStorage-Wireframing?node-id=0%3A1" target="_blank" title="View Wireframes"><span class="link-small link-hoover">View Wireframes</span></a>
 
-                    <div class="grid">
+                    <div class="grid parallax-branding">
                       <div class="grid-1">
                       <h5>Branding & User Testing</h5></div>
                       <div class="grid-1">
@@ -252,8 +259,6 @@ $(document).ready(function(){
                       Once I narrowed down the idea and found a concept I liked, I then
                       moved on to refining it into a monochromatic version that could be
                       adjusted and display using the chosen color scheme.</p>
-                      </div>
-                      </div>
                       <h2>Logo Design</h2>
                       <img src="images/logos.png" >
                       <h2>Typography</h2>
@@ -261,7 +266,10 @@ $(document).ready(function(){
                         <h2>Color Palette</h2>
                       <img src="images/colorcloud.png" width="70%" >
                       <p><a href="https://drive.google.com/file/d/1yHofSuhXGwtqfOh-A2QXRtZKVnHT5z8-/view?usp=sharing" target="_blank" title="View Style Guide"><span class="link-small link-hoover">View Style Guide</span></a>
-                      <div class="grid">
+                      </div>
+                      </div>
+
+                      <div class="grid parallax-preference">
                         <div class="grid-1">
                       <h5>Preference Testing</h5></div>
                       <div class="grid-1">
@@ -269,13 +277,13 @@ $(document).ready(function(){
                       I analyzed three different designs with each have two variations.
                       From the results, I was able to gather which display was more visually
                       appealing to the users eyes.</p>
-
-                      </div></div>
                       <img src="images/desktoppreference1.png" >  <img src="images/desktoppreference2.png">
                         <img src="images/mobilepreference.png">
+                      </div></div>
 
 
-                      <div class="grid">
+
+                      <div class="grid parallax-usability">
                         <div class="grid-1">
                       <h5>Usability Testing</h5></div>
                       <div class="grid-1">
@@ -284,18 +292,17 @@ $(document).ready(function(){
                       could perform specific tasks.  Having a broad range of expert levels
                       provided me with valuable insight into changes and adjustments that
                       needed to be made for better user usability.</p>
-                      <p>The usability testing performed on our mockups were as follows:<br>
-                        <ul class="bullet-box">
+                      <p class="text">The usability testing performed on our mockups were as follows:<br>
+
                         <li>IOS - Signing up for an account</li>
                         <li>IOS - Creating a folder</li>
                         <li>Desktop- Uploading a file</li>
-                      </ul>
-
+                    
+                      <img src="images/usabilitydesktop.png" width="80%" >
+                    <img src="images/usabilitymobile.png" width="80%">
                   </div></div>
-                  <img src="images/usabilitydesktop.png" width="80%" >
-                <img src="images/usabilitymobile.png" width="80%">
 
-                  <div class="grid">
+                  <div class="grid parallax-conclusion">
                     <div class="grid-1">
                     <h5>The Conclusion</h5></div>
                     <div class="grid-1">
@@ -309,69 +316,54 @@ $(document).ready(function(){
                     site maps, it limits the designers ability to produce a product that
                     will be accepted by users. </p>
                   </div></div>
-                    <hr>
-                    <footer class="bottom-footer">
 
-                        <h5>Let's Connect</h5>
-                      <div class="bottom-footer-links">
-                        <a href="https://github.com/laurenmcelaney" target="_blank"><img src="images/github.png"></a>
-                        <a href="https://www.linkedin.com/in/laurenmcelaney" target="_blank"><img src="images/linkedin.png"></a>
-                        <a href="https://instagram.com/laurenmcelaney" target="_blank"><img src="images/instagram.png"></a>
-                        <a href="https://twitter.com/laurenmcelaney" target="_blank"><img src="images/twitter.png"></a>
-                        <a href="mailto:mcelaneyl@gmail.com"><img src="images/mail.png"></a>
-                      </div>
-                      <p class="text-footer">copyright 2019 designed and developed by Lauren McElaney</p>
-                    </footer>
-                  </section>
-                  <script>
-                  function myFunction() {
-                  var x = document.getElementById("myTopnav");
-                  if (x.className === "menu") {
-                    x.className += " responsive";
-                  } else {
-                    x.className = "menu";
-                  }
-                  }
-                  </script>
-                </main>
-                <script>// Scroll function courtesy of Scott Dowding; http://stackoverflow.com/questions/487073/check-if-element-is-visible-after-scrolling
+                  <footer class="bottom-footer">
 
-                $(document).ready(function() {
-                  // Check if element is scrolled into view
-                  function isScrolledIntoView(elem) {
-                    var docViewTop = $(window).scrollTop();
-                    var docViewBottom = docViewTop + $(window).height();
+                      <h5>L E T ' S - C O N N E C T</h5>
 
-                    var elemTop = $(elem).offset().top;
-                    var elemBottom = elemTop + $(elem).height();
+                      <div class="contact-form">
+                        <div class="form">
+                        <form method="POST" action="https://formspree.io/mcelaneyl@gmail.com">
+                          <input type="name" name="name" placeholder="Your name">
+                          <input type="email" name="email" placeholder="Your email">
+                          <textarea name="message" placeholder="Message"></textarea>
+                          <button type="submit">Send Email</button>
+                        </form></div>
+                        </div>
+                    <div class="bottom-footer-links">
+                      <a href="https://github.com/laurenmcelaney" target="_blank"><img src="images/github.png"></a>
+                      <a href="https://www.linkedin.com/in/laurenmcelaney" target="_blank"><img src="images/linkedin.png"></a>
+                      <a href="https://instagram.com/laurenmcelaney" target="_blank"><img src="images/instagram.png"></a>
+                      <a href="https://twitter.com/laurenmcelaney" target="_blank"><img src="images/twitter.png"></a>
+                      <a href="mailto:mcelaneyl@gmail.com"><img src="images/mail.png"></a>
+                    </div>
+                    <p class="text-footer">copyright 2019 designed and developed by Lauren McElaney</p>
+                  </footer>
 
-                    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-                  }
-                  // If element is scrolled into view, fade it in
-                  $(window).scroll(function() {
-                    $('.scroll-animations .animated').each(function() {
-                      if (isScrolledIntoView(this) === true) {
-                        $(this).addClass('fadeInLeft');
-                      }
-                    });
-                  });
-                });
+                </section>
+                <script>
+                function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "menu") {
+                  x.className += " responsive";
+                } else {
+                  x.className = "menu";
+                }
+                }
                 </script>
-              <script>
-
-        // When the user scrolls the page, execute myFunction
-        window.onscroll = function() {myFunction()};
-
-        var header = document.getElementById("navbar");
-        var sticky = header.offsetTop;
-
-        function myFunction() {
-          if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-          } else {
-            header.classList.remove("sticky");
-          }
+              </main>
+            <script>
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = function() {myFunction()};
+      var header = document.getElementById("navbar");
+      var sticky = header.offsetTop;
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
         }
-   </script>
-  </body>
-</html>
+      }
+      </script>
+      </body>
+      </html>
