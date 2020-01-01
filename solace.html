@@ -7,9 +7,10 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rozha+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Cinzel|Dr+Sugiyama&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:400,600|Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/7ba9ab4ea5.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -47,15 +48,20 @@ $(document).ready(function(){
   </head>
   <body>
     <main class="container-class">
-      <header class="header" id="navbar">
-      <a href="/index.html"><img class="logo-top" src="images/logonav.png"></a>
+      <video id="videoBG" poster="stars.png" autoplay muted loop>
+    <source src="images/stars.mp4" type="video/mp4">
+</video>
+      <header class="header">
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-      <ul class="menu" >
+
+      <ul class="menu">
         <li><a href="http://laurenmcelaney.design">Work</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/contact.html">Contact</a></li>
       </ul>
+      <h3>LM</h3>
+
       </header>
 
         <section class="content-box">
@@ -66,7 +72,7 @@ $(document).ready(function(){
             <img src="images/solaceheaderproject.png" class="center" width="100%">
             <div class="maintitle">
           <h4>Solace</h4>
-            <h2>A place for others to connect while educating and providing resources to get help.</h2></div>
+            <p class="small-text">A place for others to connect while educating and providing resources to get help.</p></div>
           <div class="prototype-links">
               <a href="https://www.figma.com/proto/jwOe0pgn6pYn4sw55IVWph/Solace-Prototype?node-id=1%3A2&viewport=80%2C328%2C0.03125&scaling=contain" target="_blank" title="View Desktop"><span class="link-small link-hoover">View Desktop Prototype</span></a>
           </div>
@@ -118,9 +124,10 @@ $(document).ready(function(){
                 I dove into the audience that each one was reaching, their internal and external
                 strengths as well as weaknesses, and opportunities that could provide a better
                 source of recognition and user frequency.</p>
+                <img src="images/userresearchsolace.png"  >
+                <p>  <a href="https://docs.google.com/document/d/1IdvlymSdEeSl6Jn6-3vTgMw6NNMF_c6dMScJ_mbgUXc/edit?usp=sharing" target="_blank"><span class="link-small link-hoover">View User Research</span></a>
               </div></div>
-              <img src="images/userresearchsolace.png"  >
-              <p>  <a href="https://docs.google.com/document/d/1IdvlymSdEeSl6Jn6-3vTgMw6NNMF_c6dMScJ_mbgUXc/edit?usp=sharing" target="_blank"><span class="link-small link-hoover">View User Research</span></a>
+
 
 
 
@@ -134,90 +141,91 @@ $(document).ready(function(){
               needs and wants are when it comes to their own mental health struggles.</p>
               <p class="text">
                 Through the user surveys, I was able to discover that:</p>
-            <ul class="bullet-box">
+
             <li>Users want the ability to find services near them</li>
             <li>Want a place to connect with others that share common issues</li>
             <li>The ability to read others points of view regarding their mental illness</li>
             <li>A place to learn more about mental health</li>
-          </ul>
+
           <p class="text">Taking the user surveys data,
             I then proceeded to create user personas.
             Each one highlighting their motivations, needs, and wants.
             The three personas are unique to each individual,
             but represent the overall demand of users today.</p>
+            <div class="persona-grid">
+              <div class="persona1">
+                  <h2>Jessica</h2>
+                <img src="images/jessica.png" >
+              <h1>Age: 22</h1>
+                <h1>Location: New York</h1>
+                <h1>Gender: Female</h1>
+                <h1>Work: Stylist</h1>
+              </div>
+              <div class="persona1">
+                <ul class="box">
+                <h2>Motivations</h2>
+                <li>Always in check with her mental health</li>
+                <li>A source that can be of information to others</li>
+                <li>Working on herself</li></ul>
+              </div>
+              <div class="persona1">
+                <ul class="box">
+                <h2>Needs</h2>
+                <li>Community board that can be a safe place to talk</li>
+                <li>The ability to chat with professionals</li>
+                <li>Ability to submit writing pieces</li></ul>
+              </div>
+            </div>
+            <div class="persona-grid">
+              <div class="persona1">
+                <h2>Joe</h2>
+                <img src="images/joe.png">
+              <h1>Age: 32</h1>
+                <h1>Location: Michigan</h1>
+                <h1>Gender: Male</h1>
+                <h1>Work: Freelancer</h1>
+              </div>
+              <div class="persona1">
+                <ul class="box">
+                <h2>Motivations</h2>
+                <li>Enjoys connecting with others</li>
+                <li>Passionate about helping others</li>
+                <li>Learning new skills</li></ul>
+              </div>
+              <div class="persona1">
+                <ul class="box">
+                <h2>Needs</h2>
+                <li>Ability to accessed anywhere</li>
+                <li>Community boards</li>
+                <li>Articles about mental health</li></ul>
+              </div>
+            </div>
+            <div class="persona-grid">
+              <div class="persona1">
+                <h2>Sophie</h2>
+                <img src="images/sophie.png">
+              <h1>Age: 36</h1>
+                <h1>Location: Seattle, WA</h1>
+                <h1>Gender: Female</h1>
+                <h1>Work: Customer Service</h1>
+              </div>
+              <div class="persona1">
+                <ul class="box">
+                <h2>Motivations</h2>
+                <li>A place to disconnect from work</li>
+                <li>Focusing on herself</li>
+                <li>Developing skills to cope more efficiantly</li></ul>
+              </div>
+              <div class="persona1">
+                <ul class="box">
+                <h2>Needs</h2>
+                <li>Customizing her own needs on her profile</li>
+                <li>Can be accessed without internet connection</li>
+                <li>Inspirational messages to read and save to her profile</li></ul>
+              </div>
+            </div>
                     </div></div>
-                <div class="persona-grid">
-                  <div class="persona1">
-                      <h2>Jessica</h2>
-                    <img src="images/jessica.png" >
-                  <h1>Age: 22</h1>
-                    <h1>Location: New York</h1>
-                    <h1>Gender: Female</h1>
-                    <h1>Work: Stylist</h1>
-                  </div>
-                  <div class="persona1">
-                    <ul class="box">
-                    <h2>Motivations</h2>
-                    <li>Always in check with her mental health</li>
-                    <li>A source that can be of information to others</li>
-                    <li>Working on herself</li></ul>
-                  </div>
-                  <div class="persona1">
-                    <ul class="box">
-                    <h2>Needs</h2>
-                    <li>Community board that can be a safe place to talk</li>
-                    <li>The ability to chat with professionals</li>
-                    <li>Ability to submit writing pieces</li></ul>
-                  </div>
-                </div>
-                <div class="persona-grid">
-                  <div class="persona1">
-                    <h2>Joe</h2>
-                    <img src="images/joe.png">
-                  <h1>Age: 32</h1>
-                    <h1>Location: Michigan</h1>
-                    <h1>Gender: Male</h1>
-                    <h1>Work: Freelancer</h1>
-                  </div>
-                  <div class="persona1">
-                    <ul class="box">
-                    <h2>Motivations</h2>
-                    <li>Enjoys connecting with others</li>
-                    <li>Passionate about helping others</li>
-                    <li>Learning new skills</li></ul>
-                  </div>
-                  <div class="persona1">
-                    <ul class="box">
-                    <h2>Needs</h2>
-                    <li>Ability to accessed anywhere</li>
-                    <li>Community boards</li>
-                    <li>Articles about mental health</li></ul>
-                  </div>
-                </div>
-                <div class="persona-grid">
-                  <div class="persona1">
-                    <h2>Sophie</h2>
-                    <img src="images/sophie.png">
-                  <h1>Age: 36</h1>
-                    <h1>Location: Seattle, WA</h1>
-                    <h1>Gender: Female</h1>
-                    <h1>Work: Customer Service</h1>
-                  </div>
-                  <div class="persona1">
-                    <ul class="box">
-                    <h2>Motivations</h2>
-                    <li>A place to disconnect from work</li>
-                    <li>Focusing on herself</li>
-                    <li>Developing skills to cope more efficiantly</li></ul>
-                  </div>
-                  <div class="persona1">
-                    <ul class="box">
-                    <h2>Needs</h2>
-                    <li>Customizing her own needs on her profile</li>
-                    <li>Can be accessed without internet connection</li>
-                    <li>Inspirational messages to read and save to her profile</li></ul>
-                  </div>
-                </div>
+
                 <div class="grid">
                   <div class="grid-1">
                 <h5>User Stories & Sitemap</h5></div>
@@ -238,18 +246,20 @@ $(document).ready(function(){
                     again used in the development of the sitemap and user flows.
                     The tasks that were showing of highest importance were as
                     follows:
-                    <ul class="bullet-box">
+
                     <li>Creating an account</li>
                     <li>Adjusting settings dependent on personal needs</li>
                     <li>Reading as well as submitting articles</li>
                     <li>Accessing the community board</li>
                     <li>Finding nearby services</li>
-                    <li>Switching between topics of help</li></ul>
+                    <li>Switching between topics of help</li>
+                    <p>
+                    <img src="images/usersolace.png" ><p>
+                    <a href="https://drive.google.com/open?id=1N0S2hnDMJfWFU6YsKyzqHTD1i6OqQGOI" target="_blank"><span class="link-small link-hoover">View User Flow</span></a>
+                    <a href="https://drive.google.com/open?id=1RqbwmTr0wX0pdUeyMuCMH2GOGaMgkNbgPBc9mOR5xJE" target="_blank"><span class="link-small link-hoover">View User Stories</span></a>
+                    <a href="https://drive.google.com/open?id=1CVYFfr5gGct7WAOA5PeGAiK3xuep9ONM" target="_blank"><span class="link-small link-hoover">View Sitemap</span></a>
               </div></div>
-              <img src="images/usersolace.png" ><p>
-              <a href="https://drive.google.com/open?id=1N0S2hnDMJfWFU6YsKyzqHTD1i6OqQGOI" target="_blank"><span class="link-small link-hoover">View User Flow</span></a>
-              <a href="https://drive.google.com/open?id=1RqbwmTr0wX0pdUeyMuCMH2GOGaMgkNbgPBc9mOR5xJE" target="_blank"><span class="link-small link-hoover">View User Stories</span></a>
-              <a href="https://drive.google.com/open?id=1CVYFfr5gGct7WAOA5PeGAiK3xuep9ONM" target="_blank"><span class="link-small link-hoover">View Sitemap</span></a>
+
 
 
               <div class="grid">
@@ -263,11 +273,12 @@ $(document).ready(function(){
                       in the user flows as well as an opportunity to test out different
                       avenues of ways to navigate throughout the application.</p>
                     <br>
+                    <img src="images/wireframesketchessolace.png" >
+                    <img src="images/wireframesolace.png">
+                    <p><a href="https://www.figma.com/file/jXbo6GwivtfTOghv9rh8Kr/Wireframing-solo-project?node-id=0%3A1" target="_blank" title="View Wireframes"><span class="link-small link-hoover">View Wireframes</span></a>
                   </div>
                 </div>
-                <img src="images/wireframesketchessolace.png" >
-                <img src="images/wireframesolace.png">
-                <p><a href="https://www.figma.com/file/jXbo6GwivtfTOghv9rh8Kr/Wireframing-solo-project?node-id=0%3A1" target="_blank" title="View Wireframes"><span class="link-small link-hoover">View Wireframes</span></a>
+
 
                     <div class="grid">
                       <div class="grid-1">
@@ -296,14 +307,15 @@ $(document).ready(function(){
                         the font style was then selected.  It was tested in
                         different weights, sizes, and formats in order to confirm
                         it held its proper identity and clearness throughout.</p>
+                        <h2>Logo Design</h2>
+                        <img src="images/solacedesignlogos.png" width="90%">
+                      <h2>Typography</h2>
+                        <img src="images/typefacesolace.png" width="90%">
+                          <h2>Color Palette</h2>
+                        <img src="images/colorpalettesolace.png" width="90%">
                       </div>
                       </div>
-                      <h2>Logo Design</h2>
-                      <img src="images/solacedesignlogos.png" width="90%">
-                    <h2>Typography</h2>
-                      <img src="images/typefacesolace.png" width="90%">
-                        <h2>Color Palette</h2>
-                      <img src="images/colorpalettesolace.png" width="90%">
+
 
                       <div class="grid">
                         <div class="grid-1">
@@ -315,19 +327,20 @@ $(document).ready(function(){
                         within the functionality of the website as well as the ability
                         to test users on tasks that were laid out in user stories.
                           The tests asked in the user testing were as follows:</p>
-                          <ul class="bullet-box">
+
                           <li>Signing up for an account</li>
                           <li>Accessing articles </li>
                           <li>Finding services near them</li>
                           <li>Filtering topics on the community board</li>
-                          <li>Connecting with others </li></ul>
+                          <li>Connecting with others </li>
                           <p class="text">The results of the user testing gave
                             me valuable feedback on design changes that needed
                             to be adjusted in order for better functionality.
                             Taking the results, the adjustments were made and
                             better performance was had.</p>
+                              <img src="images/solaceprototype.png" >
                   </div></div>
-                  <img src="images/solaceprototype.png" width="90%" >
+
                   <div class="grid">
                     <div class="grid-1">
                     <h5>The Conclusion</h5></div>
@@ -345,70 +358,54 @@ $(document).ready(function(){
                       future to keep the conversation going.  We have the opportunity to
                       spread the word and normalize what it means to have a mental illness. </p>
                   </div></div>
+                  
+                  <footer class="bottom-footer">
 
-<hr>
-                    <footer class="bottom-footer">
+                      <h5>L E T ' S - C O N N E C T</h5>
 
-                        <h5>Let's Connect</h5>
-                      <div class="bottom-footer-links">
-                        <a href="https://github.com/laurenmcelaney" target="_blank"><img src="images/github.png"></a>
-                        <a href="https://www.linkedin.com/in/laurenmcelaney" target="_blank"><img src="images/linkedin.png"></a>
-                        <a href="https://instagram.com/laurenmcelaney" target="_blank"><img src="images/instagram.png"></a>
-                        <a href="https://twitter.com/laurenmcelaney" target="_blank"><img src="images/twitter.png"></a>
-                        <a href="mailto:mcelaneyl@gmail.com"><img src="images/mail.png"></a>
-                      </div>
-                      <p class="text-footer">copyright 2019 designed and developed by Lauren McElaney</p>
-                    </footer>
+                      <div class="contact-form">
+                        <div class="form">
+                        <form method="POST" action="https://formspree.io/mcelaneyl@gmail.com">
+                          <input type="name" name="name" placeholder="Your name">
+                          <input type="email" name="email" placeholder="Your email">
+                          <textarea name="message" placeholder="Message"></textarea>
+                          <button type="submit">Send Email</button>
+                        </form></div>
+                        </div>
+                    <div class="bottom-footer-links">
+                      <a href="https://github.com/laurenmcelaney" target="_blank"><img src="images/github.png"></a>
+                      <a href="https://www.linkedin.com/in/laurenmcelaney" target="_blank"><img src="images/linkedin.png"></a>
+                      <a href="https://instagram.com/laurenmcelaney" target="_blank"><img src="images/instagram.png"></a>
+                      <a href="https://twitter.com/laurenmcelaney" target="_blank"><img src="images/twitter.png"></a>
+                      <a href="mailto:mcelaneyl@gmail.com"><img src="images/mail.png"></a>
+                    </div>
+                    <p class="text-footer">copyright 2019 designed and developed by Lauren McElaney</p>
+                  </footer>
+
                   </section>
                   <script>
                   function myFunction() {
                   var x = document.getElementById("myTopnav");
                   if (x.className === "menu") {
-                    x.className += " responsive";
+                  x.className += " responsive";
                   } else {
-                    x.className = "menu";
+                  x.className = "menu";
                   }
                   }
                   </script>
-                </main>
-                <script>// Scroll function courtesy of Scott Dowding; http://stackoverflow.com/questions/487073/check-if-element-is-visible-after-scrolling
-
-                $(document).ready(function() {
-                  // Check if element is scrolled into view
-                  function isScrolledIntoView(elem) {
-                    var docViewTop = $(window).scrollTop();
-                    var docViewBottom = docViewTop + $(window).height();
-
-                    var elemTop = $(elem).offset().top;
-                    var elemBottom = elemTop + $(elem).height();
-
-                    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+                  </main>
+                  <script>
+                  // When the user scrolls the page, execute myFunction
+                  window.onscroll = function() {myFunction()};
+                  var header = document.getElementById("navbar");
+                  var sticky = header.offsetTop;
+                  function myFunction() {
+                  if (window.pageYOffset > sticky) {
+                  header.classList.add("sticky");
+                  } else {
+                  header.classList.remove("sticky");
                   }
-                  // If element is scrolled into view, fade it in
-                  $(window).scroll(function() {
-                    $('.scroll-animations .animated').each(function() {
-                      if (isScrolledIntoView(this) === true) {
-                        $(this).addClass('fadeInLeft');
-                      }
-                    });
-                  });
-                });
-                </script>
-              <script>
-
-        // When the user scrolls the page, execute myFunction
-        window.onscroll = function() {myFunction()};
-
-        var header = document.getElementById("navbar");
-        var sticky = header.offsetTop;
-
-        function myFunction() {
-          if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-          } else {
-            header.classList.remove("sticky");
-          }
-        }
-   </script>
-  </body>
-</html>
+                  }
+                  </script>
+                  </body>
+                  </html>
