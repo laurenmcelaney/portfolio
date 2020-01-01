@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+    <title>Lauren McElaney</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rozha+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Cinzel|Dr+Sugiyama&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:400,600|Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/7ba9ab4ea5.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146723403-1"></script>
+   <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+     gtag('config', 'UA-146723403-1');
+   </script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+      // Store hash
+      var hash = this.hash;
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+  </head>
+  <body>
+    <main class="container-class">
+      <video id="videoBG" poster="stars.png" autoplay muted loop>
+    <source src="images/stars.mp4" type="video/mp4">
+</video>
+      <header class="header">
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+      <ul class="menu">
+        <li><a href="http://laurenmcelaney.design">Work</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+      <h3>LM</h3>
+
+      </header>
+      <div class="row-photos">
+        <div class="column-photos">
+          <img src="images/img1.png">
+          <img src="images/img2.png">
+          <img src="images/img3.png">
+          <img src="images/img4.png">
+          <img src="images/img5.png">
+          <img src="images/img6.png">
+        </div>
+        <div class="column-photos">
+          <img src="images/img8.png">
+          <img src="images/img9.png">
+          <img src="images/img10.png">
+          <img src="images/img11.png">
+          <img src="images/img12.png">
+            <img src="images/img13.png">
+              <img src="images/img14.png">
+        </div>
+        <div class="column-photos">
+          <img src="images/img15.png">
+          <img src="images/img16.png">
+          <img src="images/img18.png">
+          <img src="images/img19.png">
+            <img src="images/img20.png">
+              <img src="images/img21.png">
+                <img src="images/img7.png">
+        </div>
+        <div class="column-photos">
+          <img src="images/img22.png">
+          <img src="images/img23.png">
+          <img src="images/img24.png">
+          <img src="images/img25.png">
+          <img src="images/img26.png">
+
+            <img src="images/img27.png">
+
+        </div>
+      </div>
+
+
+            <footer class="bottom-footer">
+
+                <h5>Let's Connect</h5>
+              <div class="bottom-footer-links">
+                <a href="https://github.com/laurenmcelaney" target="_blank"><img src="images/github.png"></a>
+                <a href="https://www.linkedin.com/in/laurenmcelaney" target="_blank"><img src="images/linkedin.png"></a>
+                <a href="https://instagram.com/laurenmcelaney" target="_blank"><img src="images/instagram.png"></a>
+                <a href="https://twitter.com/laurenmcelaney" target="_blank"><img src="images/twitter.png"></a>
+                <a href="mailto:mcelaneyl@gmail.com"><img src="images/mail.png"></a>
+              </div>
+              <p class="text-footer">copyright 2019 designed and developed by Lauren McElaney</p>
+            </footer>
+
+          </section>
+          <script>
+          function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "menu") {
+            x.className += " responsive";
+          } else {
+            x.className = "menu";
+          }
+          }
+          </script>
+        </main>
+      <script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+var header = document.getElementById("navbar");
+var sticky = header.offsetTop;
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
