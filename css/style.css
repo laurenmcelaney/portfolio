@@ -11,179 +11,6 @@ body {
 
 }
 
-#videoBG {
-    position:fixed;
-    z-index: -1;
-/*not work if the screen ratio is below 16/9*/
-    width:100%;
-    height: auto;
-}
-@media (min-aspect-ratio: 16/9) {
-    #videoBG {
-        width:100%;
-        height: auto;
-    }
-}
-@media (max-aspect-ratio: 16/9) {
-    #videoBG {
-        width:auto;
-        height: 100%;
-    }
-}
-@media (max-width: 767px) {
-    #videoBG {
-        display: none;
-    }
-  }
-
-
-.parallax-user {
-  /* The image used */
-  background-image: url("file:///Users/laurenmcelaney/Desktop/photo-1512758017271-d7b84c2113f1.webp");
-
-  /* Set a specific height */
-  height: 500;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.parallax-survey {
-  /* The image used */
-  background-image: url("file:///Users/laurenmcelaney/Desktop/survey.jpeg");
-
-  /* Set a specific height */
-  height: 500;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.parallax-sitemap {
-  /* The image used */
-  background-image: url("file:///Users/laurenmcelaney/Desktop/sitemap.jpeg");
-
-  /* Set a specific height */
-  height: 500;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.parallax-process {
-  /* The image used */
-  background-image: url("file:///Users/laurenmcelaney/Desktop/process.jpeg");
-
-  /* Set a specific height */
-  height: 500;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.parallax-persona {
-  /* The image used */
-  background-image: url("file:///Users/laurenmcelaney/Desktop/persona.jpeg");
-
-  /* Set a specific height */
-  height: 500;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.parallax-wireframe {
-  /* The image used */
-  background-image: url("file:///Users/laurenmcelaney/Desktop/wireframing.jpeg");
-
-  /* Set a specific height */
-  height: 500;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.parallax-branding {
-  /* The image used */
-  background-image: url("file:///Users/laurenmcelaney/Desktop/branding.jpeg");
-
-  /* Set a specific height */
-  height: 500;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.parallax-preference {
-  /* The image used */
-  background-image: url("file:///Users/laurenmcelaney/Desktop/backgroundpreference.png");
-
-  /* Set a specific height */
-  height: 500;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto;
-}
-
-.parallax-usability {
-  /* The image used */
-  background-image: url("file:///Users/laurenmcelaney/Desktop/usability.jpeg");
-
-  /* Set a specific height */
-  height: 500;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto;
-}
-.parallax-conclusion {
-  /* The image used */
-  background-image: url("file:///Users/laurenmcelaney/Desktop/conclusion.jpeg");
-
-  /* Set a specific height */
-  height: 500;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto;
-}
-
-.parallax-problem {
-  /* The image used */
-  background-image: url("file:///Users/laurenmcelaney/Desktop/problem.jpeg");
-
-  /* Set a specific height */
-  height: 500;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto;
-}
 img {
   border-style: none;
   text-align: center;
@@ -826,10 +653,9 @@ img {
         .about-container {
           float: left;
           grid-template-columns: 100%;
-          padding: 0px 50px 0px 50px;
           text-align: center;
           width: 100%;
-          margin: 10px 0 0 0;
+
         }
       }
 .about-item1{
@@ -847,9 +673,10 @@ img {
   @media(max-width: 768px) {
           .about-item1 {
         float: left;
-        padding: 30px;
-        grid-row-gap: 10px;
-        margin: 10px 0 0 0;
+        width:100%;
+      grid-row-gap: 10px;
+      height:auto;
+
     }
   }
 
@@ -1012,7 +839,7 @@ h4 {
     @media(max-width: 768px) and (max-width: 1024px) {
       h4 {
       font-size: 22px;
-      line-height: 16px;
+      line-height: 24px;
     }
   }
 
@@ -1057,7 +884,7 @@ p.small-text{
 }
 @media(max-width: 768px) and (max-width: 1024px) {
   p.small-text {
-    font-size: 12px;
+    font-size: 18px;
     text-align: center;
   }
 }
