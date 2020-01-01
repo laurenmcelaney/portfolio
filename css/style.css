@@ -233,7 +233,7 @@ img {
 
 .header .menu-btn:checked ~ .menu {
   max-height: 240px;
-  background-color: white;
+  background-color: black;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
