@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
     <title>Lauren McElaney</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|PT+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rozha+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Cinzel|Dr+Sugiyama&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:400,600|Roboto+Slab:200,300,400|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -46,82 +48,122 @@ $(document).ready(function(){
   </head>
   <body>
     <main class="container-class">
+      <video id="videoBG" poster="stars.png" autoplay muted loop>
+    <source src="images/stars.mp4" type="video/mp4">
+</video>
       <header class="header">
-      <a href="/index.html"><img class="logo-top" src="images/logonav.png"></a>
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
       <ul class="menu">
         <li><a href="http://laurenmcelaney.design">Work</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/contact.html">Contact</a></li>
       </ul>
+      <h3>LM</h3>
+
       </header>
             <div class="indextitle">
-              <img class="logo" src="images/logonew.png">
-          <h4>Lauren McElaney</h4>
-          <div class="aboutme-front">
-            <p class="front">
-            Hi there!  Welcome to my page. I am a UI/UX Designer based in Los Angeles.</p>
-          </div></div>
+            <p class="text-header">Lauren McElaney<br>
+          UI/UX Designer</p>
 
-
-        <section class="content-box">
-
-
-          <div class="container">
-            <img src="images/cloudproject.png" alt="Avatar" class="image" style="width:100%">
-            <div class="middle">
-              <div class="text">
-            <h1>In The Cloud</h1> <p class="small-text">A cloud storage application developed to make saving files easier.</p>
-          <br>
-        <a href="/inthecloud.html"><span class="link-small link-hoover">View Case Study</span></a>
           </div>
-            </div>
+          <div class="arrow blackarrow">
+          <a href="#section2" class="fas fa-arrow-down fa-2x blackarrow"></a>
           </div>
 
-          <div class="container">
-            <img src="images/solaceproject.png" alt="Avatar" class="image" style="width:100%">
+
+
+        <section class="content-box" id="section2">
+            <h4>R E C E N T - W O R K</h4>
+          <div class="row">
+            <div class="column">
+              <div class="container">
+              <img src="images/front2.png" alt="Avatar" class="imgfade">
               <div class="middle">
             <div class="text">
-          <h1>Solace</h1> <p class="small-text">An online community focused around mental health.</p>
+            <p class="text-project">Solace</p> <p class="small-text">An online community focused around mental health.</p>
         <br>
       <a href="/solace.html"><span class="link-small link-hoover">View Case Study</span></a>
         </div>
             </div>
           </div>
-          <hr>
-          <div class="about-container">
-          <div class="about-item1">
-          <h5>About Me</h5>
-          As a designer, I am committed to creating functional and visually appealing products for users and clients alike.
-          I am available for hire as well as taking on new work.
-          See my information below or check out my <a href="/contact.html">contact page</a>.
+        </div>
+        <div class="column container">
+          <img src="images/front1.png" alt="Avatar" class="imgfade">
+          <div class="middle">
+          <div class="text">
+        <p class="text-project">In The Cloud</p> <p class="small-text">A cloud storage application developed to make saving files easier.</p>
+      <br>
+    <a href="/inthecloud.html"><span class="link-small link-hoover">View Case Study</span></a>
+      </div>
+        </div>
+        </div>
+        <div class="column">
+          <div class="container">
+          <img src="images/portfolio.png"class="imgfade" >
+          <div class="middle">
+        <div class="text">
+        <p class="text-project">Photography</p>
+      <br>
+      <a href="/photography.html"><span class="link-small link-hoover">View Portfolio</span></a>
+      </div>
         </div>
       </div>
-          <hr>
-            <h5>Skills</h5>
+    </div>
+
+
+          <div class="about-container">
+              <img src="images/abtimg.png"style="width:60%">
+          <div class="about-item1">
+          <h4>T H E - D E S I G N E R</h4>
+          <p class="text-front">As a designer, I am committed to creating functional and visually appealing products for users and clients alike.
+          I am available for hire as well as taking on new work.
+          </p>
+        </div>
+      </div>
+
+      <div class="skills-container2">
+        <h4>S K I L L S</h4>
           <div class="skills-container">
           <div class="skills-item1">
-            Wireframing & Prototyping<br>
+              <h4>01
+              <img src="images/icon1.png"></h4>
+              Wireframing & Prototyping<br>
               Frontend Development<br>
-                  Usability Testing
+              Usability Testing
                 </div>
                 <div class="skills-item2">
-                Product Strategy<br>
+                      <h4>02
+                      <img src="images/icon2.png"></h4>
+              Product Strategy<br>
                   User Research & Testing<br>
-                      User Personas
+                    User Personas
                     </div>
                     <div class="skills-item3">
+                        <h4>03
+                        <img src="images/icon3.png"></h4>
                       User Stories<br>
                       Visual Design<br>
-                        UI/UX Design
+                      UI/UX Design
                         </div>
           </div>
+        </div>
 
-          <hr>
+
             <footer class="bottom-footer">
 
-                <h5>Let's Connect</h5>
+                <h5>L E T ' S - C O N N E C T</h5>
+
+                <div class="contact-form">
+                  <div class="form">
+                  <form method="POST" action="https://formspree.io/mcelaneyl@gmail.com">
+                    <input type="name" name="name" placeholder="Your name">
+                    <input type="email" name="email" placeholder="Your email">
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <button type="submit">Send Email</button>
+                  </form></div>
+                  </div>
               <div class="bottom-footer-links">
                 <a href="https://github.com/laurenmcelaney" target="_blank"><img src="images/github.png"></a>
                 <a href="https://www.linkedin.com/in/laurenmcelaney" target="_blank"><img src="images/linkedin.png"></a>
