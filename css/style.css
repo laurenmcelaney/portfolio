@@ -1122,10 +1122,10 @@ ul.box li {
   width: 100%;
   margin: 25px 0 25px 0;
 }
-@media(max-width: 768px) and (min-width: 1024px) {
+@media(max-width: 768px) and (max-width: 1024px) {
   .about-box {
-    background-color: white;
     margin-top: 0px;
+    padding: 0px 25px 0px 25px;
   }
 }
 /*** project page layout ***/
