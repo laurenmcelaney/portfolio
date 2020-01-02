@@ -644,10 +644,10 @@ img {
     }
 
 .about-container{
-      display: inline-block;
+    display: inline-block;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    padding-top: 40px;
 }
  @media(max-width: 768px) {
         .about-container {
@@ -667,7 +667,7 @@ img {
     float: right;
     position: relative;
     width: 40%;
-    height: 458px;
+    height: auto;
     }
 
   @media(max-width: 768px) {
