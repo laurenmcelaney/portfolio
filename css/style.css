@@ -822,11 +822,12 @@ h2 {
   text-align: center;
   margin-right: 8px;
   max-width: 64ch;
+  line-height: normal;
 }
 @media(max-width: 768px) and (max-width: 1024px) {
   h2 {
     font-size: 16px;
-    line-height: 20px;
+    line-height: normal;
   }
 }
 
@@ -1097,7 +1098,7 @@ ul.box li {
 
 }
 
-@media(max-width: 768px) and (max-width: 1024px){
+@media(max-width: 768px) and (max-width: 1024px) {
     .persona-grid {
       float: left;
       grid-template-columns: 50%;
@@ -1106,6 +1107,15 @@ ul.box li {
       display: flex;
     }
   }
+  @media(max-width: 1366px){
+      .persona-grid {
+        float: left;
+        grid-template-columns: 50%;
+        width: 100%;
+        padding: 5px;
+        display: flex;
+      }
+    }
 .persona1{
   font-size: 14px;
   font-family: 'Raleway', sans-serif;
