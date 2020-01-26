@@ -755,11 +755,7 @@ a {
 .photos-link1:hover {
   background-color: #5B2423;
 }
-  @media(max-width: 768px) {
-    .prototype-links, .project-link {
-      display:none;
-    }
-  }
+
 /*** resume ***/
 .resume-box{
   display: inline-block;
@@ -1213,15 +1209,7 @@ ul.box li {
   .link-hoover:hover {
     background-color: #C9A52E;
   }
-    @media(max-width: 768px) and (max-width: 1024px) {
-      .prototype-links, .project-link {
-        float:left;
-        width:100%;
-        padding: 2px;
-        margin-bottom: 20px;
-        font-size: 14px;
-      }
-    }
+
 /*** project page boxes ***/
 
 
