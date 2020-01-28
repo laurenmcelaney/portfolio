@@ -842,11 +842,11 @@ h3 {
 }
 
 h4 {
-  color: #866E1F;
-  font-family: 'Roboto Slab', serif;
-  font-size: 36px;
-  line-height: 10%;
-}
+    color: #866E1F;
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: normal;
 
     @media(max-width: 768px) and (max-width: 1024px) {
       h4 {
