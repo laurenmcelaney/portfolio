@@ -48,7 +48,7 @@ $(document).ready(function(){
   </head>
   <body>
     <main class="container-class">
-      <header class="header">
+      <header class="header" id="myHeader">
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 
@@ -62,7 +62,7 @@ $(document).ready(function(){
 
         <section class="content-box">
           <div class="arrow blackarrow">
-          <a href="#section2" class="fas fa-arrow-down fa-2x blackarrow"></a>
+          <a href="#section3" class="fas fa-arrow-down fa-2x blackarrow"></a>
           </div>
 
             <img src="images/solaceheaderproject.png" class="center" width="100%">
@@ -73,7 +73,7 @@ $(document).ready(function(){
               <a href="https://www.figma.com/proto/jwOe0pgn6pYn4sw55IVWph/Solace-Prototype?node-id=1%3A2&viewport=80%2C328%2C0.03125&scaling=contain" target="_blank" title="View Desktop"><span class="link-small link-hoover">View Desktop Prototype</span></a>
           </div>
 
-          <div class="rolls-divider" id="section2">
+          <div class="rolls-divider" id="section3">
               <ul class="rolls"><i class="fas fa-pencil-ruler fa-6x"></i><p class="text-bold">Role:</p>
                 <li>UI/UX</li>
                 <li>Branding & Identity</li>
@@ -389,10 +389,10 @@ $(document).ready(function(){
                   }
                   </script>
                   </main>
-                  <script>
+           <script>
                   // When the user scrolls the page, execute myFunction
                   window.onscroll = function() {myFunction()};
-                  var header = document.getElementById("navbar");
+                  var header = document.getElementById("myHeader");
                   var sticky = header.offsetTop;
                   function myFunction() {
                   if (window.pageYOffset > sticky) {
