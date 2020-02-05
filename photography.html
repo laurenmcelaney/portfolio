@@ -48,7 +48,7 @@ $(document).ready(function(){
   </head>
   <body>
     <main class="container-class">
-      <header class="header">
+      <header class="header" id="myHeader">
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 
@@ -134,18 +134,18 @@ $(document).ready(function(){
       }
       </script>
       </main>
-      <script>
-      // When the user scrolls the page, execute myFunction
-      window.onscroll = function() {myFunction()};
-      var header = document.getElementById("navbar");
-      var sticky = header.offsetTop;
-      function myFunction() {
-      if (window.pageYOffset > sticky) {
-      header.classList.add("sticky");
-      } else {
-      header.classList.remove("sticky");
-      }
-      }
-      </script>
+<script>
+                 // When the user scrolls the page, execute myFunction
+                  window.onscroll = function() {myFunction()};
+                  var header = document.getElementById("myHeader");
+                  var sticky = header.offsetTop;
+                  function myFunction() {
+                  if (window.pageYOffset > sticky) {
+                  header.classList.add("sticky");
+                  } else {
+                  header.classList.remove("sticky");
+                  }
+                  }
+            </script>
   </body>
 </html>
