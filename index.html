@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/7ba9ab4ea5.js"></script>
+    <link href="css/magic.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+     <script src="https://kit.fontawesome.com/7ba9ab4ea5.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146723403-1"></script>
    <script>
@@ -22,135 +24,82 @@
      gtag('config', 'UA-146723403-1');
    </script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-      // Store hash
-      var hash = this.hash;
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
 
   </head>
   <body>
     <main class="container-class">
-     
       <header class="header" id="myHeader">
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 
       <ul class="menu">
-         <li><a href="#section2">Work</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="/photography.html">Photography</a></li>
         <li><a href="/about.html">About</a></li>
       </ul>
       <a href="https://laurenmcelaney.design"><h3>LM</h3></a>
 
       </header>
+
             <div class="indextitle">
-            <p class="text-header">Lauren McElaney<br>
-          UI/UX Designer</p>
-
-          </div>
-          <div class="arrow blackarrow">
-          <a href="#section2" class="fas fa-arrow-down fa-2x blackarrow"></a>
-          </div>
-
-
-
-        <section class="content-box" id="section2">
-            <h4>RECENT - WORK</h4>
-          <div class="row">
-            <div class="column">
-              <div class="container">
-              <img src="images/front3.png" alt="Avatar" class="imgfade">
-              <div class="middle">
-            <div class="text">
-            <p class="text-project">Solace</p> <p class="small-text">An online community focused around mental health.</p>
-        <br>
-      <a href="/solace.html"><span class="link-small link-hoover">View Case Study</span></a>
-        </div>
-            </div>
+              <div class="indextitle-2">
+                <img src="sketch2.png">
+              </div>
+              <div class="indextitle-1">
+                <p class="text-header">Hi there!<p>
+                <p class="text-front">My name is Lauren McElaney and I am a UI/UX Designer based in Los Angeles.
+                As a designer, I am committed to creating functional
+                and visually appealing products for users and clients alike.
+                I am available for hire as well as taking on new work.</p>
+                  <a href="/solace.html"><span class="link-small link-hoover">Send me a message</span></a>
           </div>
         </div>
-        <div class="column container">
-          <img src="images/front1.png" alt="Avatar" class="imgfade">
-          <div class="middle">
-          <div class="text">
-        <p class="text-project">In The Cloud</p> <p class="small-text">A cloud storage application developed to make saving files easier.</p>
-      <br>
-    <a href="/inthecloud.html"><span class="link-small link-hoover">View Case Study</span></a>
-      </div>
-        </div>
-        </div>
-        <div class="column">
-          <div class="container">
-          <img src="images/portfolio.png"class="imgfade" >
-          <div class="middle">
-        <div class="text">
-        <p class="text-project">Photography</p>
-      <br>
-      <a href="/photography.html"><span class="link-small link-hoover">View Portfolio</span></a>
-      </div>
-        </div>
-      </div>
-    </div>
 
-
-          <div class="about-container">
-              <img src="images/abtimg.png"style="width:60%">
-          <div class="about-item1">
-          <h4>THE - DESIGNER</h4>
-          <p class="text-front">As a designer, I am committed to creating functional and visually appealing products for users and clients alike.
-          I am available for hire as well as taking on new work.
-          </p>
-        </div>
-      </div>
-
-      <div class="skills-container2">
-        <h4>SKILLS</h4>
-          <div class="skills-container">
-          <div class="skills-item1">
+        <section class="content-box" >
+          <h4>Skills</h4>
+            <div class="skills-container">
+            <div class="skills">
               <h4>01
-              <img src="images/icon1.png"></h4>
-              Wireframing & Prototyping<br>
-              Frontend Development<br>
-              Usability Testing
-                </div>
-                <div class="skills-item2">
-                      <h4>02
-                      <img src="images/icon2.png"></h4>
-              Product Strategy<br>
-                  User Research & Testing<br>
-                    User Personas
-                    </div>
-                    <div class="skills-item3">
-                        <h4>03
-                        <img src="images/icon3.png"></h4>
-                      User Stories<br>
-                      Visual Design<br>
-                      UI/UX Design
-                        </div>
-          </div>
+                <img src="images/icon1.png"></h4>
+                <p class="text-skills">Wireframing & Prototyping<br>
+                Frontend Development<br>
+                Usability Testing</p>
+              </div>
+                  <div class="skills">
+                        <h4>02
+                        <img src="images/icon2.png"></h4>
+                <p class="text-skills">Product Strategy<br>
+                    User Research & Testing<br>
+                      User Personas</p>
+                      </div>
+                      <div class="skills">
+                          <h4>03
+                          <img src="images/icon3.png"></h4>
+                        <p class="text-skills">User Stories<br>
+                        Visual Design<br>
+                        UI/UX Design</p>
+                          </div>
+            </div>
+          <div class="process-container">
+            <div class="process">
+          <h4>Process</h4>
         </div>
-
+        <div class="process1">
+          <img src="images/process.png">
+        </div>
+      </div>
+          <div class="process-container">
+            <div class="process">
+          <h4>Tools</h4>
+        </div>
+        <div class="process1">
+          <img src="images/designtools.png">
+        </div>
+      </div>
 
             <footer class="bottom-footer">
 
-                <h4>LET'S - CONNECT</h4>
+              <h4>Let's Connect</h4>
 
                 <div class="contact-form">
                   <div class="form">
@@ -164,7 +113,7 @@ $(document).ready(function(){
               <div class="bottom-footer-links">
                 <a href="https://github.com/laurenmcelaney" target="_blank"><img src="images/github.png"></a>
                 <a href="https://www.linkedin.com/in/laurenmcelaney" target="_blank"><img src="images/linkedin.png"></a>
-                <a href="https://instagram.com/lololaurenlo" target="_blank"><img src="images/instagram.png"></a>
+                <a href="https://instagram.com/laurenmcelaney" target="_blank"><img src="images/instagram.png"></a>
                 <a href="https://twitter.com/laurenmcelaney" target="_blank"><img src="images/twitter.png"></a>
                 <a href="mailto:mcelaneyl@gmail.com"><img src="images/mail.png"></a>
               </div>
@@ -183,18 +132,42 @@ $(document).ready(function(){
           }
           </script>
         </main>
+      <script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
 <script>
-                  // When the user scrolls the page, execute myFunction
-                  window.onscroll = function() {myFunction()};
-                  var header = document.getElementById("myHeader");
-                  var sticky = header.offsetTop;
-                  function myFunction() {
-                  if (window.pageYOffset > sticky) {
-                  header.classList.add("sticky");
-                  } else {
-                  header.classList.remove("sticky");
-                  }
-                  }
-  </script>
+$(document).ready(function() {
+  // Check if element is scrolled into view
+  function isScrolledIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+  }
+  // If element is scrolled into view, fade it in
+  $(window).scroll(function() {
+    $('.animation .animated').each(function() {
+      if (isScrolledIntoView(this) === true) {
+        $(this).addClass('fadeInLeft');
+      }
+    });
+  });
+});
+</script>
+
+
 </body>
 </html>
