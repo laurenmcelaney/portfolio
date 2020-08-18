@@ -63,7 +63,9 @@ $(document).ready(function(){
       </header>
 
         <section class="content-box">
+            <animation class="animation show-on-scroll">
               <img src="images/frontsolace.png" class="center" width="100%">
+            </animation>
             <div class="maintitle">
           <h4>Solace</h4>
             <p class="small-text">A place for others to connect while educating and providing resources to get help.</p>
@@ -90,11 +92,14 @@ $(document).ready(function(){
                 <li>Wireframing & Prototyping</li>
               <li>User Testing & Analysis</li></ul>
             </div>
+
+              <animation class="animation show-on-scroll">
             <div class="grid-top-2">
         <div class="grid-1"><h1>Problem</h1></div>
             <div class="grid-1">
             <p class="text">Asking for help or understanding what your struggles are can be difficult.  Having a place where others share common conflicts can provide a comfort that one might lack.  Many applications geared towards working on oneself and finding help are geared towards one specific area of support.  Such as online therapy, only providing therapy and nothing else.  Same as meditation applications, only providing meditations but not supplying other resources if that fails to work. Taking all this into mind, I wanted to create a place where it featured all different avenues for one to choose from to work on themselves.</p>
           </div></div>
+        </animation>
 
             <div class="grid-top-1">
         <div class="grid-1">
@@ -106,7 +111,8 @@ $(document).ready(function(){
                             programs.  While doing this research, I was able to gather the pro’s and con’s of
                             each source and establishing a basis for the project of a new application.</p>
             </div></div>
-          <div class="grid-top-2">
+
+            <animation class="animation show-on-scroll"><div class="grid-top-2">
       <div class="grid-1">
             <h1>User Research</h1></div>
             <div class="grid-1">
@@ -123,6 +129,7 @@ $(document).ready(function(){
                 <img src="images/userresearchsolace.png"  >
                 <p>  <a href="https://docs.google.com/document/d/1IdvlymSdEeSl6Jn6-3vTgMw6NNMF_c6dMScJ_mbgUXc/edit?usp=sharing" target="_blank"><span class="link-small link-hoover">View User Research</span></a>
               </div></div>
+            </animation>
 
 
 
@@ -208,7 +215,8 @@ $(document).ready(function(){
             </div>
 
 
-                <div class="grid-top-2">
+                  <animation class="animation show-on-scroll">
+                    <div class="grid-top-2">
                   <div class="grid-1">
                 <h1>User Stories & Sitemap</h1></div>
                   <div class="grid-1">
@@ -241,7 +249,7 @@ $(document).ready(function(){
                     <a href="https://drive.google.com/open?id=1RqbwmTr0wX0pdUeyMuCMH2GOGaMgkNbgPBc9mOR5xJE" target="_blank"><span class="link-small link-hoover">View User Stories</span></a>
                     <a href="https://drive.google.com/open?id=1CVYFfr5gGct7WAOA5PeGAiK3xuep9ONM" target="_blank"><span class="link-small link-hoover">View Sitemap</span></a>
               </div></div>
-
+            </animation>
 
 
               <div class="grid-top-1">
@@ -262,7 +270,8 @@ $(document).ready(function(){
                 </div>
 
 
-                    <div class="grid-top-2">
+                    <animation class="animation show-on-scroll">
+                        <div class="grid-top-2">
                       <div class="grid-1">
                       <h1>Branding & User Testing</h1></div>
                       <div class="grid-1">
@@ -297,7 +306,7 @@ $(document).ready(function(){
                         <img src="images/colorpalettesolace.png" width="90%">
                       </div>
                       </div>
-
+                    </animation>
 
                       <div class="grid-top-1">
                         <div class="grid-1">
@@ -324,7 +333,8 @@ $(document).ready(function(){
                         <img src="images/solacemobileprototype.png" >
                   </div></div>
 
-                  <div class="grid-top-2">
+                  <animation class="animation show-on-scroll">
+                      <div class="grid-top-2">
                     <div class="grid-1">
                     <h1>The Conclusion</h1></div>
                     <div class="grid-1">
@@ -341,7 +351,7 @@ $(document).ready(function(){
                       future to keep the conversation going.  We have the opportunity to
                       spread the word and normalize what it means to have a mental illness. </p>
                   </div></div>
-
+                </animation>
                   <footer class="bottom-footer">
 
                       <h4>Let's Connect</h4>
@@ -366,6 +376,48 @@ $(document).ready(function(){
                   </footer>
 
                   </section>
+                  <script>
+                  // Detect request animation frame
+              var scroll = window.requestAnimationFrame ||
+                           // IE Fallback
+                           function(callback){ window.setTimeout(callback, 1000/60)};
+              var elementsToShow = document.querySelectorAll('.show-on-scroll');
+
+              function loop() {
+
+                  Array.prototype.forEach.call(elementsToShow, function(element){
+                    if (isElementInViewport(element)) {
+                      element.classList.add('is-visible');
+                    } else {
+                      element.classList.remove('is-visible');
+                    }
+                  });
+
+                  scroll(loop);
+              }
+
+              // Call the loop for the first time
+              loop();
+
+              // Helper function from: http://stackoverflow.com/a/7557433/274826
+              function isElementInViewport(el) {
+                // special bonus for those using jQuery
+                if (typeof jQuery === "function" && el instanceof jQuery) {
+                  el = el[0];
+                }
+                var rect = el.getBoundingClientRect();
+                return (
+                  (rect.top <= 0
+                    && rect.bottom >= 0)
+                  ||
+                  (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+                  ||
+                  (rect.top >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+                );
+              }
+              </script>
                   <script>
                   function myFunction() {
                   var x = document.getElementById("myTopnav");
