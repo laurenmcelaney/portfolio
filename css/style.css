@@ -1053,11 +1053,13 @@ p.text2{
 }
 p.text-large {
   color: #000;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: lighter;
-  font-size: 36px;
-  line-height: 38px;
-  text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    max-width: 46ch;
+    margin: auto;
 
 }
 @media(max-width: 768px) and (max-width: 1024px) {
@@ -1182,7 +1184,22 @@ p.text-bold {
     text-align: center;
   }
 }
-
+p.text-bullet {
+  color: #0f1257;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 600;
+    text-align: left;
+    padding: 0 30px 0 40px;
+}
+@media(max-width: 768px) and (max-width: 1024px) {
+  p.text-bullet {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+}
 p.text-footer {
   color: #000;
   font-family: 'Raleway', sans-serif;
@@ -1488,9 +1505,6 @@ img.center {
 }
 
 .grid-1{
-  font-size: 14px;
-  font-family: 'Raleway', sans-serif;
-  line-height: 24px;
   position: relative;
 padding-bottom: 20px;
   width: 100%;
