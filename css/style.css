@@ -1254,6 +1254,7 @@ ul.box li {
           clear: both;
           text-align: center;
           margin: auto;
+      padding-bottom: 60px;
     }
   }
 
