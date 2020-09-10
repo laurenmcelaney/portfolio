@@ -1238,6 +1238,16 @@ ul.box li {
 
 }
 
+@media(max-width: 768px) and (max-width: 1024px) {
+  ul.box {
+    text-align: center;
+      padding: 0px 20px 0 20px;
+      margin: auto;
+      width: 250px;
+      height: auto;
+    }
+  }
+
 .persona-grid{
   content: "";
       display: table;
