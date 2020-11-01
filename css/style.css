@@ -118,15 +118,22 @@ animation.is-visible {
 
 
 @media(max-width: 768px) and (max-width: 1024px){
-  .grid-container-front{
-    float: left;
-    grid-template-rows: auto;
-    width: 100%;
-    padding: 5px;
-    margin: 10px 0 0 0;
+  .grid-item-front, .grid-item-front1{
+    padding: 0 20px 0 20px;
+    text-align: center;
   }
 }
 
+
+
+@media(max-width: 768px) and (max-width: 1024px){
+  .grid-container-front, .grid-container-front2, .grid-container-front3, .grid-container-front4{
+    float: left;
+      grid-template-rows: auto;
+      width: 100%;
+      padding: 5px;
+  }
+}
 
 
 
@@ -1130,6 +1137,12 @@ p.text-project {
       font-family: 'Raleway', sans-serif;
       font-size: 48px;
       text-align: center;
+    }
+  @media(max-width: 768px) and (max-width: 1024px) {
+      p.text-project {
+        font-size: 24px;
+        text-align: center;
+      }
     }
 
 p.text-header {
