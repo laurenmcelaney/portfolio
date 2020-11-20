@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
     <title>Lauren McElaney</title>
-    <link rel="icon" href="https://laurenmcelaney.design/images/LM.png" type="image/icon type">
     <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rozha+One&display=swap" rel="stylesheet">
@@ -63,7 +62,8 @@ $(document).ready(function(){
 
       </header>
 
-           <section class="content-box" >
+      <section class="content-box" >
+        <animation class="animation show-on-scroll">
           <div class="grid-container-front2">
             <div class="grid-item-front">
                 <img src="images/pixalistfront.png" >
@@ -73,6 +73,8 @@ $(document).ready(function(){
       <a href="/pixalist.html"><span class="link-small link-hoover">View Project</span></a>
       </div>
     </div>
+  </animation>
+  <animation class="animation show-on-scroll">
             <div class="grid-container-front3">
             <div class="grid-item-front">
                 <img src="images/front3.png" >
@@ -84,7 +86,8 @@ $(document).ready(function(){
       </div>
       </div>
     </div>
-
+  </animation>
+<animation class="animation show-on-scroll">
         <div class="grid-container-front4">
       <div class="grid-item-front">
       <img src="images/front6.png" >
@@ -96,6 +99,8 @@ $(document).ready(function(){
       </div>
       </div>
     </div>
+  </animation>
+
 
 
                   <footer class="bottom-footer">
@@ -123,28 +128,70 @@ $(document).ready(function(){
 
                 </section>
                 <script>
+                // Detect request animation frame
+              var scroll = window.requestAnimationFrame ||
+                         // IE Fallback
+                         function(callback){ window.setTimeout(callback, 1000/60)};
+              var elementsToShow = document.querySelectorAll('.show-on-scroll');
+
+              function loop() {
+
+                Array.prototype.forEach.call(elementsToShow, function(element){
+                  if (isElementInViewport(element)) {
+                    element.classList.add('is-visible');
+                  } else {
+                    element.classList.remove('is-visible');
+                  }
+                });
+
+                scroll(loop);
+              }
+
+              // Call the loop for the first time
+              loop();
+
+              // Helper function from: http://stackoverflow.com/a/7557433/274826
+              function isElementInViewport(el) {
+              // special bonus for those using jQuery
+              if (typeof jQuery === "function" && el instanceof jQuery) {
+                el = el[0];
+              }
+              var rect = el.getBoundingClientRect();
+              return (
+                (rect.top <= 0
+                  && rect.bottom >= 0)
+                ||
+                (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+                  rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+                ||
+                (rect.top >= 0 &&
+                  rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+              );
+              }
+              </script>
+                <script>
                 function myFunction() {
                 var x = document.getElementById("myTopnav");
                 if (x.className === "menu") {
-                  x.className += " responsive";
+                x.className += " responsive";
                 } else {
-                  x.className = "menu";
+                x.className = "menu";
                 }
                 }
                 </script>
-              </main>
-       <script>
-                  // When the user scrolls the page, execute myFunction
-                  window.onscroll = function() {myFunction()};
-                  var header = document.getElementById("myHeader");
-                  var sticky = header.offsetTop;
-                  function myFunction() {
-                  if (window.pageYOffset > sticky) {
-                  header.classList.add("sticky");
-                  } else {
-                  header.classList.remove("sticky");
-                  }
-                  }
-                  </script>
-      </body>
-      </html>
+                </main>
+            <script>
+                // When the user scrolls the page, execute myFunction
+                window.onscroll = function() {myFunction()};
+                var header = document.getElementById("myHeader");
+                var sticky = header.offsetTop;
+                function myFunction() {
+                if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+                } else {
+                header.classList.remove("sticky");
+                }
+                }
+            </script>
+        </body>
+    </html>
