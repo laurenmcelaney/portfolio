@@ -721,19 +721,20 @@ z-index: 4;
       text-align: center;
       grid-column-gap: 10px;
 }
-@media(max-width: 768px){
-    .skills-container {
-      grid-template-columns: 300px;
-      padding: 0px 50px 0px 50px;
-      margin: 10px 0 0 0;
-    }
+@media(max-width: 768px) and (max-width: 1024px){
+  .skills-container {
+    grid-template-columns: 300px;
+    padding: 0px 50px 0px 50px;
   }
-.skills{
-      font-size: 30px;
-      text-align: center;
-      background-color: #faf8f4;
-      border-radius: 25px;
 }
+.skills{
+    font-size: 30px;
+    text-align: center;
+    background-color: #faf8f4;
+    border-radius: 25px;
+    margin: 10px;
+}
+
 
 .process-container{
   display: inline-grid;
