@@ -1064,7 +1064,7 @@ p.text {
 }
 @media (max-width: 1024px) {
   p.text {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 26px;
     text-align: left;
     padding:0 30px 0 30px;
@@ -1086,7 +1086,7 @@ p.text2{
 
 @media (max-width: 768px) {
   p.text2 {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 26px;
     text-align: left;
     padding: 0 30px 0 30px;
