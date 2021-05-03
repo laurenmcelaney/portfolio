@@ -1053,8 +1053,8 @@ p.persona2{
 p.text {
   color: black;
   font-family: 'Raleway', sans-serif;;
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 15px;
+  line-height: 26px;
   text-align: left;
   max-width: 68ch;
   margin:auto;
@@ -1076,7 +1076,7 @@ p.text2{
   color: #000;
       font-family: 'Raleway', sans-serif;
       font-size: 15px;
-      line-height: 28px;
+      line-height: 26px;
       font-weight: 400;
       text-align: left;
       margin: auto;
