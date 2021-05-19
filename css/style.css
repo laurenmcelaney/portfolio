@@ -1671,6 +1671,7 @@ padding-bottom: 20px;
 
 .grid-top-5{
   display: inline-grid;
+  max-width: 100%;
   text-align: center;
     padding: 90px 0 100px;
 }
