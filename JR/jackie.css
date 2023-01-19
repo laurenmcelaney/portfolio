@@ -265,7 +265,7 @@ animation.is-visible {
 	display: flex;
 margin: 0 auto;
 position: relative;
-width: calc(100% - var(--padding)*2);
+width: 100%;
 align-items: center;
  justify-content: center;
  background-color: #FDF8F2;
