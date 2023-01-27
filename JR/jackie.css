@@ -175,6 +175,16 @@ p.courier {
 	letter-spacing: 1.25px;
 }
 
+p.footer {
+	color: black;
+  font-family: 'Avenir', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #818181;
+}
+
+
 .color-row{
 	display: flex;
 flex-direction: row;
