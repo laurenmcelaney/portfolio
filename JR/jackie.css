@@ -39,7 +39,7 @@ height: 100%;
 }
 @media(max-width: 768px) and (max-width: 1024px){
   .gallery{
-      max-width: 45%;
+      max-width: 100%;
       margin: auto;
   }
 }
@@ -50,7 +50,8 @@ height: 100%;
 
 .gallery img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  padding:10px;
 }
 
 .desc {
@@ -130,6 +131,14 @@ p.bodysmall {
   line-height: 1.5;
   text-align: center;
 }
+p.bodyitalic {
+  color: black;
+  font-family: 'Avenir', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  font-style: italic;
+}
 
 p.bodylarge {
   color: black;
@@ -141,10 +150,11 @@ p.bodylarge {
 p.body2 {
   color: black;
   font-family: 'Avenir', sans-serif;
-  font-size: calc(16px + .3vw);
+  font-size: 16px;
   line-height: 1.5;
   text-align: center;
-	letter-spacing: 1.25px;
+  max-width: 64ch;
+  margin: auto;
 }
 
 p.body3 {
@@ -156,6 +166,19 @@ p.body3 {
   text-align: center;
 	letter-spacing: 1.25px;
 }
+
+p.body4 {
+  color: black;
+  font-family: 'Avenir', sans-serif;
+	font-weight: 700;
+  font-size: calc(16px + .3vw);
+  line-height: 1.5;
+  text-align: center;
+    max-width: 64ch;
+    margin: auto;
+    padding:24px 0;
+}
+
 p.caps {
 	color: black;
   font-family: 'Avenir', sans-serif;
@@ -174,7 +197,6 @@ p.courier {
   text-align: center;
 	letter-spacing: 1.25px;
 }
-
 p.footer {
 	color: black;
   font-family: 'Avenir', sans-serif;
@@ -183,7 +205,6 @@ p.footer {
   text-align: center;
   color: #818181;
 }
-
 
 .color-row{
 	display: flex;
@@ -199,15 +220,7 @@ hr.solid {
 	width: 80%;
 }
 
-img.color{
-	border: 1px solid #E5B3AC;
-	border-radius: 50px;
-	width: 76px;
-}
 
-img.color:hover{
-	border: 1px solid black;
-}
 .splide__slide img {
   width: 100%;
   height: auto;
@@ -386,7 +399,7 @@ img.primary {
       padding: 64px;
       margin: auto;
       height: max-content;
-      background-color: #D79E67;
+      background-color: #ffe0c3;
 }
 
 @media(max-width: 768px) and (max-width: 1024px){
@@ -407,6 +420,18 @@ img.primary {
 @media(max-width: 768px) and (max-width: 1024px){
   .gold-dress{
     padding: 0 20px 0 20px;
+    text-align: center;
+  }
+}
+
+.gold-dress2 {
+    padding: 48px 0 0;
+    text-align: center;
+}
+
+@media(max-width: 768px) and (max-width: 1024px){
+  .gold-dress2{
+    padding: 24px 0 0;
     text-align: center;
   }
 }
