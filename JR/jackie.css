@@ -268,15 +268,6 @@ animation.is-visible {
     grid-template-columns: 100%;
 		background-color: #FDF8F2;
 }
-.dresses-container2{
-	position: static;
-    display: grid;
-    height: auto;
-    width: 100%;
-    grid-template-rows: repeat(4, min-content) 1fr;
-    grid-template-columns: 100%;
-		background-color: #FDF8F2;
-}
 
 .inside-dresses{
 	position: static;
