@@ -204,6 +204,8 @@ p.footer {
   line-height: 1.5;
   text-align: center;
   color: #818181;
+  max-width: 64ch;
+  margin: auto;
 }
 
 .color-row{
