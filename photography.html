@@ -1,20 +1,14 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
-    <title>Lauren McElaney</title>
-    <link rel="icon" href="https://laurenmcelaney.design/images/LM.png" type="image/icon type">
-    <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rozha+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Cinzel|Dr+Sugiyama&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:400,600|Roboto+Slab&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Nixie+One&family=Stint+Ultra+Expanded&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/7ba9ab4ea5.js"></script>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+      <title>Lauren McElaney</title>
+        <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,300,600,400,700&f[]=boska@900,901,701,201,401,301,500,400,2,1,200,700,300,501&f[]=melodrama@400,600,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/normalize.css">
+      <link rel="stylesheet" href="css/style.css">
+  <link href="css/magic.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146723403-1"></script>
    <script>
@@ -46,7 +40,6 @@ $(document).ready(function(){
   });
 });
 </script>
-
   </head>
   <body>
     <main class="container-class">
@@ -54,15 +47,17 @@ $(document).ready(function(){
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 
-        <ul class="menu">
-          <li><a href="/projects.html">Projects</a></li>
-          <li><a href="/photography.html">Photography</a></li>
-          <li><a href="/about.html">About</a></li>
-        </ul>
-    <a href="https://laurenmcelaney.design"><h3>LM</h3></a>
+      <ul class="menu">
+        <li><a href="index.html/#work">Work</a></li>
+        <div style="border-right: 1px solid #CCCCCC;">&nbsp;</div>
+        <li><a href="/photography.html">Photography</a></li>
+          <div style="border-right: 1px solid #CCCCCC;">&nbsp;</div>
+        <li><a href="/about.html">About</a></li>
+      </ul>
+      <a href="https://laurenmcelaney.design"class="logo">LM</a>
 
       </header>
-        <section class="content-box ">
+        <section class="photography">
       <div class="row-photos">
         <div class="column-photos">
           <img src="images/img1.png">
@@ -102,30 +97,24 @@ $(document).ready(function(){
 
         </div>
       </div>
-      </section>
 
-  <footer class="bottom-footer">
-
-          <h4>Let's Connect</h4>
-
-          <div class="contact-form">
-            <div class="form">
-            <form method="POST" action="https://formspree.io/mcelaneyl@gmail.com">
-              <input type="name" name="name" placeholder="Your name">
-              <input type="email" name="email" placeholder="Your email">
-              <textarea name="message" placeholder="Message"></textarea>
-              <button type="submit">Send Email</button>
-            </form></div>
-            </div>
-        <div class="bottom-footer-links">
-          <a href="https://github.com/laurenmcelaney" target="_blank"><img src="images/github.png"></a>
-          <a href="https://www.linkedin.com/in/laurenmcelaney" target="_blank"><img src="images/linkedin.png"></a>
-          <a href="https://instagram.com/lololaurenlo" target="_blank"><img src="images/instagram.png"></a>
-          <a href="https://twitter.com/laurenmcelaney" target="_blank"><img src="images/twitter.png"></a>
-          <a href="mailto:mcelaneyl@gmail.com"><img src="images/mail.png"></a>
-        </div>
-        <p class="text-footer">copyright 2022 designed and developed by Lauren McElaney</p>
-      </footer>
+    </section>
+    <footer class="bottom-footer">
+      <div style="width:100%;">
+        &copy;
+      <span id="copyright">
+          <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+      </span>
+    designed and developed by Lauren McElaney
+    </div>
+      <div class="bottom-footer-links">
+        <a href="https://www.linkedin.com/in/laurenmcelaney" target="_blank"><img src="images/linkedin.svg"></a>
+        <a href="mailto:mcelaneyl@gmail.com"><img src="images/dribbble.svg"></a>
+        <a href="mailto:mcelaneyl@gmail.com"><img src="images/mail.svg"></a>
+        <a href="https://instagram.com/lololaurenlo" target="_blank"><img src="images/instagram.svg"></a>
+        <a href="https://twitter.com/laurenmcelaney" target="_blank"><img src="images/twitter.svg"></a>
+      </div>
+    </footer>
 
       </section>
       <script>
@@ -139,18 +128,18 @@ $(document).ready(function(){
       }
       </script>
       </main>
-<script>
-                 // When the user scrolls the page, execute myFunction
-                  window.onscroll = function() {myFunction()};
-                  var header = document.getElementById("myHeader");
-                  var sticky = header.offsetTop;
-                  function myFunction() {
-                  if (window.pageYOffset > sticky) {
-                  header.classList.add("sticky");
-                  } else {
-                  header.classList.remove("sticky");
-                  }
-                  }
-            </script>
+      <script>
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = function() {myFunction()};
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
+      function myFunction() {
+      if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+      } else {
+      header.classList.remove("sticky");
+      }
+      }
+      </script>
   </body>
 </html>
