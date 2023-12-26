@@ -1873,6 +1873,7 @@ img.circle{
     font-family:'General Sans', sans-serif;
     line-height: 1.8;
     position: relative;
+    padding:16px;
   }
 }
 
