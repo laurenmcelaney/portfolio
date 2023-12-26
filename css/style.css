@@ -191,7 +191,7 @@ animation.is-visible {
 }
 .wrapper{
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
       margin: 0;
 }
 @media(max-width: 768px){
@@ -203,7 +203,6 @@ animation.is-visible {
 }
 
 #gridfrontproject {
-  display: block;
   position: relative;
   width: 100%;
   height: auto;
@@ -212,21 +211,7 @@ animation.is-visible {
   background: radial-gradient(118.75% 104.39% at 20.05% 0%, #405957 0%, #869695 65.1%, #405957 100%);
 }
 
-@media(max-width: 768px){
-  #gridfrontproject  {
-    color:#161515;
-  }
-}
-#gridfrontproject:hover .overlay {
-  opacity: 1;
-}
-@media(max-width: 768px){
-  #gridfrontproject:hover .overlay {
-    transition: none !important;
-  }
-}
 #gridfrontproject2 {
-  display: block;
   position: relative;
   width: 100%;
   height: auto;
@@ -234,73 +219,19 @@ animation.is-visible {
     color:white;
     background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.00) 0%, #D0DCF1 100%);
 }
-#gridfrontproject2:hover .overlay {
-  opacity: 1;
+.wrapper-grid{
+  display: inline-grid;
+  grid-template-rows: auto;
+  padding:32px;
+  gap:16px;
 }
-@media(max-width: 768px){
-  #gridfrontproject2:hover .overlay {
-    transition: none !important;
-  }
-}
-#gridfrontproject3 {
-  display: block;
+
+.project-front{
   position: relative;
-  width: 100%;
-  height: auto;
-  margin: 0;
-    color:white;
-    background: transparent;
+  padding: 0;
+  margin: auto;
+  text-align: center;
 }
-#gridfrontproject3:hover .overlay {
-  opacity: 1;
-}
-@media(max-width: 768px){
-  #gridfrontproject3:hover .overlay {
-    transition: none !important;
-  }
-}
-
-@media(max-width: 768px){
-  #gridfrontproject, #gridfrontproject2, #gridfrontproject3{
-    padding:0;
-    color: #161515;
-  }
-}
-.overlay{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background: rgb(0 0 0 / 79%);
-}
-
-.middle{
-  position: absolute;
-  top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- -ms-transform: translate(-50%, -50%);
-}
-
-@media(max-width: 768px){
-  .overlay, .middle {
-    position: relative;
-    top: 0;
-   left: 0;
-   transition: none;
-   opacity: inherit;
-   transform: none;
-   background: white;
-   padding: 8px 16px;
-   height: auto;
-  }
-}
-
 
 .grid-container-front2 {
   display: inline-grid;
@@ -1297,7 +1228,7 @@ h4 {
   }
 
 h5 {
-  color: #ADACAD;
+  color: #757575;
     font-family: 'General Sans', sans-serif;
     font-size: 18px;
     letter-spacing: 2px;
@@ -1718,11 +1649,6 @@ ul.box li {
     text-decoration: underline;
   }
 
-  @media(max-width: 768px) and (max-width: 1024px) {
-    .linktext {
-      float:left;
-    }
-  }
 
   .linktext:hover {
     text-decoration: none;
